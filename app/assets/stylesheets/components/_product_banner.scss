@@ -1,0 +1,46 @@
+#product-banner {
+  height: 200px;
+  background-color: rgba(0, 104, 124, 255);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+#product-banner h1 {
+  font-size: 32px;
+}
+
+#product-banner ul {
+  margin:0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 70%;
+}
+
+#product-banner ul li {
+  margin:auto;
+  width: 200px;
+  margin: 0px;
+  display: inline;
+  font-size: 10px;
+}
+
+#product-banner img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.product-banner-div {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  img {
+    align-self: center;
+  }
+}
