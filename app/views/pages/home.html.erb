@@ -31,84 +31,150 @@
   <div style="display:flex;justify-content:center;">
     <ul>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Water<br>
-          Treatment
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "1-WT.jpg", alt: "" %>
+            Water<br>
+            Treatment
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Mining
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "2-M.jpg", alt: "" %>
+            Mining
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Fertilizers
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "3-Fert.jpg", alt: "" %>
+            Fertilizers
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Oil & Gas
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "4-O&G.jpg", alt: "" %>
+            Oil & Gas
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Fireside<br>
-          Treatment
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "5-F.jpg", alt: "" %>
+            Fireside<br>
+            Treatment
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Construction
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "6-C.jpg", alt: "" %>
+            Construction
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          HomeCare<br>
-          & PersonalCare
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "7-HC.jpg", alt: "" %>
+            HomeCare
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Paper<br>
-          & Pulp
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "8-PC.jpg", alt: "" %>
+            PersonalCare
+          </div>
+        <% end %>
       </li>
       <li>
-        <div class="product-banner-div">
-          <%= image_tag "home-slide-1.png", alt: "" %>
-          Textile<br>
-          & Leather
-        </div>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "9-P&P.jpg", alt: "" %>
+            Paper<br>
+            & Pulp
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "10-T&L.jpg", alt: "" %>
+            Textile<br>
+            & Leather
+          </div>
+        <% end %>
       </li>
     </ul>
   </div>
 </div>
+<div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+</div>
 <div class="row" id="diagram-div">
-  <div class="column">
-    <div class="column-text-div">
-      <h2>Over two decades <br>of experience</h2>
+  <div class="wrapper">
+    <div class="cell" id="cell-1">
+      <h2>Over two decades<br>of experience</h2>
     </div>
-    <div class="column-text-div">
-      <h2>X patent <br>families</h2>
+    <div class="cell" id="cell-2">
+      <h2>X patent<br>families</h2>
     </div>
-    <div class="column-text-div">
-      <h2>X grantet <br>patents</h2>
+    <div class="cell" id="cell-3">
+      <h2>X grantet<br>patents</h2>
     </div>
-    <div class="column-text-div">
-      <h2>X technical support <br>engineers at your request</h2>
+    <div class="cell" id="cell-4">
+      <h2>X technical support<br>engineers at your request</h2>
+    </div>
+    <div class="cell" id="cell-5">
+      <h2>25% of annual revenue<br>reinvested into<br>Research & Development</h2>
+    </div>
+    <div class="cell" id="cell-6">
+      <h2>5 Research &<br>Development<br>centres<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-7">
+      <h2>X <br>manufacturing<br>plants<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-8">
+      <h2>X strategic<br>locations<br>worldwide</h2>
     </div>
   </div>
-  <div class="column">
-  </div>
-  <div class="column">
+</div>
+<div class="cards-container">
+  <div class="cards-div">
+    <div class="card">
+      <div class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
+    <div class="card">
+      <div  class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
   </div>
 </div>

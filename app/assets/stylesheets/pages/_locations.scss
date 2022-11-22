@@ -1,0 +1,67 @@
+.locations-banner {
+  height: 100vh;
+  width: 100vw;
+}
+
+.locations-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid rgba(1, 104, 123, 0.1);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  h2 {
+    color: #00687c;
+    font-weight: bolder;
+  }
+}
+
+.country-info {
+  display: flex;
+  img {
+    height: 18px;
+    width: 18px;
+    align-self: center;
+  }
+}
+
+.country-info p {
+  margin: 0px;
+}
+
+.country-info-icon-right {
+  margin-left: 5px;
+}
+
+.row h2:after {
+  content: "";
+  display: block;
+  width: 30%;
+  padding-top: 5px;
+  border-bottom: 4px solid #00687c;
+}
+
+.country-info-div {
+  position: relative;
+}
+
+.border-right {
+  position: absolute;
+  border-right: 1px solid rgba(1, 104, 123, 0.1);
+  height: 60%;
+  right: 23px;
+  bottom: 20px;
+}

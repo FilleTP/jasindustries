@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 30px;
+  border-top: 1px solid rgba(1, 104, 123, 0.1);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
+}
+
+.footer-left ul {
+  list-style: none;
+}
+
+.footer-header {
+  font-weight:lighter;
+  color: rgba(8, 109, 127, 255)
+}
+
+.footer-text {
+  font-weight: lighter;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,40 @@
+.cards-container {
+  width: 100vw;
+}
+
+.cards-div {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 350px;
+  width: 285px;
+  border:0ch;
+  background-color: rgba(247, 247, 247, 255);
+}
+
+.card-image {
+  height: 250px;
+  width: 285px;
+  background-size: cover;
+}
+
+.card-bottom {
+  padding-top: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+}
+
+.button-card {
+  text-decoration: none;
+  width: max-content;
+  font-size: 10px;
+  padding: 4px 12px;
+  background-color: rgba(0, 104, 124, 255);
+  color: white;
+}
