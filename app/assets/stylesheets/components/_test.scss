@@ -1,0 +1,200 @@
+@media screen and (max-width: 1200px) {
+  .our-company-container {
+    width: 95%;
+  }
+}
+
+.our-company-top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #00687c;
+}
+
+.our-company-header-middle h2 {
+  background-color: #00687c;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 8px;
+  margin-top: 20px;
+}
+
+// MISSION & VISION TOP
+
+.mission-container-top {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: large;
+    color: #00687c;
+  }
+
+  p {
+    font-size: small;
+  }
+}
+
+.mission-div-top-left {
+  position: relative;
+  width: 42%;
+  height: 200px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -74px;
+    top: 23px;
+  }
+}
+
+.mission-div-top-right {
+  position: relative;
+  width: 42%;
+  height: 200px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: -104px;
+    top: 138px;
+  }
+}
+
+.mission-top-left-border {
+  position: absolute;
+  border-bottom: 1px solid #00687c;
+  border-right: 1px solid #00687c;
+  height: 68%;
+  width: 80%;
+  transform: skewX(-30deg);
+  right: -10px;
+  top: 62px;
+}
+
+.mission-top-right-border {
+  position: absolute;
+  border-top: 1px solid #00687c;
+  border-left: 1px solid #00687c;
+  height: 83%;
+  width: 80%;
+  transform: skewX(-30deg);
+  top: -8px;
+  right: 106px;
+}
+
+// MISSION & VISION BOTTOM
+
+.mission-container-bottom {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #00687c;
+
+  h2 {
+    font-size: large;
+    color: #00687c;
+  }
+
+  p {
+    font-size: small;
+  }
+}
+
+.mission-div-bottom-left {
+  position: relative;
+  width: 42%;
+  height: 200px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: -86px;
+    top: 23px;
+  }
+}
+
+.mission-div-bottom-right {
+  position: relative;
+  width: 42%;
+  height: 200px;
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: -104px;
+    top: 138px;
+  }
+}
+
+.mission-bottom-left-border {
+  position: absolute;
+  border-bottom: 1px solid #00687c;
+  border-right: 1px solid #00687c;
+  height: 68%;
+  width: 83%;
+  transform: skewX(-30deg);
+  right: -22px;
+  top: 62px;
+}
+
+.mission-bottom-right-border {
+  position: absolute;
+  border-top: 1px solid #00687c;
+  border-left: 1px solid #00687c;
+  height: 83%;
+  width: 80%;
+  transform: skewX(-30deg);
+  top: -8px;
+  right: 106px;
+}

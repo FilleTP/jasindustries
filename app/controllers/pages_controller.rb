@@ -5,4 +5,11 @@ class PagesController < ApplicationController
   def locations
   end
 
+  def contact
+  end
+
+  def our_company
+  end
+
+
 end
