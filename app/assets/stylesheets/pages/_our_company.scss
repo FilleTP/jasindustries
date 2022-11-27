@@ -209,3 +209,34 @@
   right: 0px;
   top: -1px;
 }
+
+// Bottom Containers
+
+.our-company-bottom-box-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.our-company-bottom-box {
+  color:white;
+  width: 40%;
+  padding: 25px 0px 25px 25px;
+  h2 {
+    font-weight: bolder;
+  }
+  h2:after {
+    content: "";
+    display: block;
+    width: 15%;
+    padding-top: 5px;
+    border-bottom: 6px solid white;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .our-company-bottom-box {
+    width: 90%;
+  }
+}

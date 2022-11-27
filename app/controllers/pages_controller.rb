@@ -11,5 +11,7 @@ class PagesController < ApplicationController
   def our_company
   end
 
+  def jas_cares
+  end
 
 end

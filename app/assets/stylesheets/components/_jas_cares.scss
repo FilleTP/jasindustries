@@ -4,11 +4,35 @@
 //   display: block;
 //   justify-content: center;
 // }
+
+.jas-cares-div {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 #jas-cares {
  width: 70%;
- height:400px;
- background-size: auto 300px;
+ min-height: 400px;
+ background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
- margin: 0 auto;
+}
+
+@media screen and (max-width: 1100px) {
+  #jas-cares {
+    min-height: 300px;
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #jas-cares {
+    min-height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #jas-cares {
+    min-height: 150px;
+  }
 }

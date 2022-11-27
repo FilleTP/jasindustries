@@ -1,0 +1,222 @@
+<div id="navbar">
+  <div id="navbar-logo">
+    <%= image_tag "logo.png"%>
+  </div>
+  <div id="navbar-links">
+    <%= link_to "Our Company", root_path %>
+    <%= link_to "Products & Solutions", root_path %>
+    <%= link_to "Media Center", root_path %>
+    <%= link_to "Downloads", root_path %>
+    <%= link_to "Careers", root_path %>
+    <%= link_to "Contact Us", root_path %>
+    <%= link_to "Locations", root_path %>
+  </div>
+</div>
+
+
+<div class="row" id="diagram-div">
+  <div class="wrapper">
+    <div class="cell" id="cell-1">
+      <h2>Over two decades<br>of experience</h2>
+    </div>
+    <div class="cell" id="cell-2">
+      <h2>X patent<br>families</h2>
+    </div>
+    <div class="cell" id="cell-3">
+      <h2>X grantet<br>patents</h2>
+    </div>
+    <div class="cell" id="cell-4">
+      <h2>X technical support<br>engineers at your request</h2>
+    </div>
+    <div class="cell" id="cell-5">
+      <h2>25% of annual revenue<br>reinvested into<br>Research & Development</h2>
+    </div>
+    <div class="cell" id="cell-6">
+      <h2>5 Research &<br>Development<br>centres<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-7">
+      <h2>X <br>manufacturing<br>plants<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-8">
+      <h2>X strategic<br>locations<br>worldwide</h2>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+
+      <%= image_tag "home-slide-1.png", class: "d-block", alt: ""  %>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag "home-slide-2.jpg", class: "d-block", alt: "" %>
+    </div>
+    <div class="carousel-item">
+      <%# <%= video_tag "home-slide-3.mov", autoplay: :autoplay, class: "d-block", alt: "" %>
+      <%= image_tag "home-slide-2.jpg", class: "d-block", alt: "" %>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div id="product-banner">
+  <h1>Find the right <strong>solutions</strong> for you needs</h1>
+  <div class="product-container" style="display:flex;justify-content:center;">
+    <ul>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "1-WT.jpg", alt: "" %>
+            Water<br>
+            Treatment
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "2-M.jpg", alt: "" %>
+            Mining
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "3-Fert.jpg", alt: "" %>
+            Fertilizers
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "4-O&G.jpg", alt: "" %>
+            Oil & Gas
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "5-F.jpg", alt: "" %>
+            Fireside<br>
+            Treatment
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "6-C.jpg", alt: "" %>
+            Construction
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "7-HC.jpg", alt: "" %>
+            HomeCare
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "8-PC.jpg", alt: "" %>
+            PersonalCare
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "9-P&P.jpg", alt: "" %>
+            Paper<br>
+            & Pulp
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to root_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "10-T&L.jpg", alt: "" %>
+            Textile<br>
+            & Leather
+          </div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="jas-cares-div">
+  <div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+  </div>
+</div>
+
+<div class="cards-container">
+  <div class="cards-div">
+    <div class="card">
+      <div class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
+    <div class="card">
+      <div  class="card-image" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+      </div>
+      <div class="card-bottom">
+        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
+        <p>Lorem Ipsum Dolor Sit Amet Adpiscing</p>
+        <a class="button-card" href="">read more...</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.jas-cares-banner {
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jas-cares-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.jas-cares-top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.bold-colored-p {
+  font-weight: bold;
+  color: #00687c;
+}
+
+.jas-cares-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 3.3%;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.jas-cares-card {
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

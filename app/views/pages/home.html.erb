@@ -28,7 +28,7 @@
 </div>
 <div id="product-banner">
   <h1>Find the right <strong>solutions</strong> for you needs</h1>
-  <div style="display:flex;justify-content:center;">
+  <div class="product-container" style="display:flex;justify-content:center;">
     <ul>
       <li>
         <%= link_to root_path do %>
@@ -117,8 +117,11 @@
     </ul>
   </div>
 </div>
-<div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+<div class="jas-cares-div">
+  <div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+  </div>
 </div>
+
 <div class="row" id="diagram-div">
   <div class="wrapper">
     <div class="cell" id="cell-1">
@@ -147,6 +150,7 @@
     </div>
   </div>
 </div>
+
 <div class="cards-container">
   <div class="cards-div">
     <div class="card">

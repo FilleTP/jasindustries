@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "locations", to: "pages#locations"
   get "contact", to: "pages#contact"
   get "our-company", to: "pages#our_company"
+  get "jas-cares", to: "pages#jas_cares"
   # post "contact-submit", to: "pages#contact_submit"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

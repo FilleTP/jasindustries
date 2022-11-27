@@ -1,5 +1,5 @@
 #product-banner {
-  height: 200px;
+  // height: 200px;
   background-color: rgba(0, 104, 124, 255);
   color: white;
   text-align: center;
@@ -14,15 +14,28 @@
   margin:0px;
   padding: 0px;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   align-self: center;
   width: 70%;
 }
 
+@media screen and (max-width: 900px) {
+  #product-banner ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+
+  }
+}
+
 #product-banner ul li {
   margin:auto;
-  width: 200px;
+  // width: 200px;
   margin: 0px;
   display: inline;
   font-size: 10px;
@@ -53,4 +66,9 @@ li a {
     text-decoration: none;
     color: grey;
   }
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
 }
