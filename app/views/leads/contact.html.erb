@@ -1,0 +1,32 @@
+<div class="contact-container">
+  <h1 class="contact-header">Product Inquiry</h1>
+
+  <%= simple_form_for @lead, url: contact_path, data: { turbo_method: :post } do |f| %>
+    <div>
+      <%=  f.input :market, collection: Lead::MARKETS, required: true %>
+      <%=  f.input :question, label: false, placeholder: "Your question *", required: true%>
+    </div>
+    <div class="contact-form-bottom">
+      <div class="contact-form-left">
+        <%=  f.input :first_name, input_html: { class: "contact-input" }, required: true %>
+        <%=  f.input :email, input_html: { class: "contact-input" }, required: true %>
+        <%=  f.input :department, collection: Lead::DEPARTMENTS, required: true %>
+        <%=  f.input :city, label: "City (optional)", input_html: { class: "contact-input" }%>
+      </div>
+      <div class="contact-form-right">
+        <%=  f.input :last_name, input_html: { class: "contact-input" }, required: true %>
+        <%=  f.input :phone_number, label: "Phone number", input_html: { class: "contact-input" } %>
+        <%=  f.input :company, input_html: { class: "contact-input" }, required: true %>
+        <%=  f.country_select :country, { include_blank: 'Select a country' } ,required: true %>
+      </div>
+    </div>
+    <p class="terms-contact-form">The personal data contained in this form is intended for the sole use of JAS Global Industries. We will use this data to respond to your request or obtain additional information from you as needed, as the case may be. You have the right to access, correct and request the deletion, restriction or portability of your personal data as applicable, or object to its processing, by sending an electronic mail to privacy@jasind.com. For more information, please visit our ‘JAS Global Industries Data Protection and Privacy Policy’ available at: Privacy policy</p>
+    <div class="submit-box">
+      <div class="terms-div">
+        <%=f.check_box :terms_and_conditions, required: true %>
+        <p>I hereby agree to the storage and the use of my personal data by JAS Global Industries to answer to the inquiry above.</p>
+      </div>
+      <%= f.submit "Submit", id: "submit-button" %>
+    </div>
+  <% end %>
+</div>
