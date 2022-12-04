@@ -67,3 +67,5 @@ gem 'country_select'
 
 # Image hosting
 gem "cloudinary"
+
+gem 'stimulus-rails'
