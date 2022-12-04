@@ -64,3 +64,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Simple Form Country Select
 gem 'country_select'
+
+# Image hosting
+gem "cloudinary"
