@@ -11,4 +11,7 @@ class PagesController < ApplicationController
   def jas_cares
   end
 
+  def water_treatment
+  end
+
 end
