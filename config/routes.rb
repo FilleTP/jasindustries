@@ -10,8 +10,10 @@ Rails.application.routes.draw do
   # get "water-treatment", to: "pages#water_treatment"
 
   get "products", to: "products#index"
-  post "products", to: "products#create"
-  get "products/water-treatment", to: "products#water_treatment", as: "water_treatment"
+  post "products/water-treatment", to: "products#create"
+  get "products/water-treatment", to: "products#water_treatment"
+  post "products/mining", to: "products#create"
+  get "products/mining", to: "products#mining"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

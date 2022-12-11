@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["window", "button", "buttonClose"]
+  static targets = ["window", "button", "buttonClose", "submit"]
 
   connect() {
 
@@ -21,9 +21,10 @@ export default class extends Controller {
       activeButton.innerText = "Request Documentation"
       activeButton.classList.remove("active-button")
     }
-    this.windowTarget.scrollTo(0, this.windowTarget.scrollHeight)
+
     this.windowTarget.classList.add("active")
     this.windowTarget.classList.toggle("d-none")
+    this.windowTarget.scrollIntoView({ behaviour: "smooth", block: "end" })
 
     // console.log(this.buttonTarget.scrollHeight, this.windowTarget)
     this.buttonTarget.classList.add("active-button")

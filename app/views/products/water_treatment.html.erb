@@ -133,7 +133,7 @@
     <li><%= image_tag "checkbox.svg" %> Coagulants</li>
     <li><%= image_tag "checkbox.svg" %> Granular Calcium Hypochlorite</li>
   </ul>
-  <% @products.each do |product| %>
+  <% Product.all.each do |product| %>
     <div data-controller="modal_reveal">
       <div class="product-download-section">
         <p class="product-title-download"><%= product.name %></p>
@@ -142,11 +142,9 @@
           <p>Markets: <%=  product.market.name%></p>
         </div>
         <button class="download-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Request Documentation</button>
-        <button class="close-button d-none" download-button" data-modal_reveal-target="buttonClose" data-action="click->modal_reveal#toggleModal">Close</button>
       </div>
-      <div data-modal_reveal-target="window" class="d-none">
-      <button class="close" data-action="click->modal_reveal#toggleModal">Close</button>
-        <%= simple_form_for @product_lead, url: products_path, data: { turbo_method: :post } do |f| %>
+      <div data-modal_reveal-target="window" class="d-none product-lead-form-div">
+        <%= simple_form_for @product_lead, url: products_water_treatment_path, method: :post, data: { turbo: false } do |f| %>
           <div>
             <%=  f.association :product, collection: @products, required: true, label: false, selected: product.id %>
           </div>

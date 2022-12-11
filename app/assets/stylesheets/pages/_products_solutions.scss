@@ -47,11 +47,30 @@
 .product-title-download {
   font-weight: bold;
   color: #00687c;
+  &:before {
+    content: "Product";
+    font-size: smaller;
+    display: block;
+    color: white;
+    background-color: #00687c;
+    width: 70px;
+    text-align: center;
+
+  }
 }
 
 .download-button {
+  color: #00687c;
+  border: 0px;
+  background-color: #e6e6e6;
   padding: 4px 8px;
   height: fit-content;
   width: fit-content;
   border-radius: 12px;
+}
+
+
+.product-lead-form-div {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
