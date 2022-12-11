@@ -1,0 +1,57 @@
+.product-solutions-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.product-solutions-header {
+  font-weight: bolder;
+  color: #00687c;
+}
+
+.image-text {
+  color: white;
+  background-color: #00687c;
+  padding: 10px;
+  font-weight: bolder;
+  margin: 0px;
+}
+
+.product-solutions-image {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.product-solutions-list-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-solutions-ul-first {
+  padding: 0px;
+  list-style-type: none;
+}
+.product-solutions-list-div ul {
+  list-style-type: none;
+}
+
+.product-download-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-title-download {
+  font-weight: bold;
+  color: #00687c;
+}
+
+.download-button {
+  padding: 4px 8px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 12px;
+}

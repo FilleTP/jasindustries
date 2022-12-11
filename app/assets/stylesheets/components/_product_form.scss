@@ -1,0 +1,153 @@
+#new_product_lead select {
+  background-color: white !important;
+  border-width: 0px 0px 1px 0px !important;
+  padding: 0px;
+  margin-top: 15px;
+  color: #808080;
+}
+
+#new_product_lead textarea {
+  background-color: white !important;
+  border-width: 1px !important;
+  color: #808080;
+  min-height: 200px;
+  margin-top: 15px;
+}
+
+#product_lead_product_id {
+  margin-left: 2px;
+    background: url("arrow.svg") no-repeat center right 2px;
+    background-size: 10px;
+}
+
+.contact-form-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form-bottom {
+    flex-direction: column;
+  }
+}
+
+.contact-form-left {
+  width: 48%;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form-left {
+    width: 100%;
+  }
+}
+
+.contact-form-right {
+  width: 48%;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form-right {
+    width: 100%;
+  }
+}
+
+
+.product_lead_first_name {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+.product_lead_last_name {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+.product_lead_email {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+.product_lead_phone_number {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+.product_lead_company {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+.product_lead_city {
+  display: inline-flex;
+  width: -webkit-fill-available;
+}
+
+#product_lead_country {
+  display: inline-flex;
+  width: -webkit-fill-available;
+  height: 25px;
+  border-bottom: 1px solid #cccccc;
+  color: #808080;
+}
+
+.form-label {
+  margin: 0px;
+  width: 200px;
+  border-bottom: 1px solid #cccccc;
+  color: #808080;
+  margin-top: 15px;
+}
+
+#new_product_lead textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #808080;
+  opacity: 1;
+  /* Firefox */
+}
+
+#new_product_lead select::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #808080;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #808080;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #808080;
+}
+
+.terms-contact-form {
+  margin-top: 25px;
+  font-size: x-small;
+}
+
+#submit-button {
+  background-color: #00687c;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.terms-div {
+  display: flex;
+
+  p {
+    margin: 0px 0px 0px 5px;
+  }
+}
+
+.submit-box {
+  background-color: #e6e6e6;
+  padding: 5px 10px 10px 10px;
+}
+
+.invalid-feedback {
+  display: none !important;
+}

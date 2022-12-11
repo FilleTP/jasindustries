@@ -1,5 +1,4 @@
 class LeadsController < ApplicationController
-
   def contact
     @lead = Lead.new
   end
