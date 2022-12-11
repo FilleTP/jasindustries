@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   get "contact", to: "leads#contact"
   post "contact", to: "leads#create"
 
-  get "water-treatment", to: "pages#water_treatment"
+  # get "water-treatment", to: "pages#water_treatment"
+
+  get "products", to: "products#index"
+  post "products", to: "products#create"
+  get "products/water-treatment", to: "products#water_treatment", as: "water_treatment"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

@@ -6,3 +6,6 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+import ModalRevealController from "./modal_reveal_controller"
+application.register("modal_reveal", ModalRevealController)

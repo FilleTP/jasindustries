@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   end
 
   def water_treatment
+    @products = Product.all
   end
 
 end

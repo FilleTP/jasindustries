@@ -16,6 +16,9 @@
     "webpack-cli": "^3.3.12"
   },
   "version": "0.1.0",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
   "devDependencies": {
     "webpack-dev-server": "^3"
   }
