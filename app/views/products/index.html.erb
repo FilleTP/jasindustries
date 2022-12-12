@@ -1,2 +1,91 @@
-<h1>INDEX PRODUCTS</h1>
-<%= link_to "Water Tratment", water_treatment_path %>
+<div id="product-banner">
+  <h1>Products and Solutions</h1>
+  <div class="product-container" style="display:flex;justify-content:center;">
+    <ul>
+      <li>
+        <%= link_to products_water_treatment_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "1-WT.jpg", alt: "" %>
+            Water<br>
+            Treatment
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_mining_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "2-M.jpg", alt: "" %>
+            Mining
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_fertilizers_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "3-Fert.jpg", alt: "" %>
+            Fertilizers
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_oil_and_gas_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "4-O&G.jpg", alt: "" %>
+            Oil & Gas
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_fireside_treatment_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "5-F.jpg", alt: "" %>
+            Fireside<br>
+            Treatment
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_construction_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "6-C.jpg", alt: "" %>
+            Construction
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_home_care_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "7-HC.jpg", alt: "" %>
+            HomeCare
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_personal_care_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "8-PC.jpg", alt: "" %>
+            PersonalCare
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_paper_and_pulp_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "9-P&P.jpg", alt: "" %>
+            Paper<br>
+            & Pulp
+          </div>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to products_textile_and_leather_path do %>
+          <div class="product-banner-div">
+            <%= image_tag "10-T&L.jpg", alt: "" %>
+            Textile<br>
+            & Leather
+          </div>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>

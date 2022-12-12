@@ -151,3 +151,18 @@
 .invalid-feedback {
   display: none !important;
 }
+
+
+@media screen and (max-width: 700px) {
+  .mb-3 {
+    margin-top: 0px!important;
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+    margin-bottom: 5px!important;
+  }
+}
+
+.form-header {
+  color: #00687c;
+  font-weight: 300px;
+}

@@ -1,11 +1,21 @@
 .product-solutions-container {
   width: 70%;
   margin: 0 auto;
+  h3 {
+    font-family: "Roboto";
+    font-size:large;
+    font-weight: bold;
+  }
 }
 
 .product-solutions-header {
   font-weight: bolder;
   color: #00687c;
+}
+
+.subheader-products {
+  color: #00687c;
+  font-weight: 300;
 }
 
 .image-text {
@@ -34,10 +44,22 @@
 .product-solutions-ul-first {
   padding: 0px;
   list-style-type: none;
+    li {
+      background: url("checkbox.svg");
+      background-repeat: no-repeat;
+      padding-left: 27px;
+    }
 }
 .product-solutions-list-div ul {
   list-style-type: none;
+    li {
+      background: url("checkbox.svg");
+      background-repeat: no-repeat;
+      padding-left: 27px;
+    }
 }
+
+
 
 .product-download-section {
   display: flex;
@@ -47,11 +69,74 @@
 .product-title-download {
   font-weight: bold;
   color: #00687c;
+  &:before {
+    content: "Product";
+    font-size: x-small;
+    font-family: "Roboto";
+    display: block;
+    color: white;
+    background-color: #00687c;
+    width: 50px;
+    text-align: center;
+
+  }
 }
 
 .download-button {
+  color: #00687c;
+  border: 0px;
+  background-color: #e6e6e6;
   padding: 4px 8px;
   height: fit-content;
   width: fit-content;
   border-radius: 12px;
+  position: relative;
+}
+
+
+.product-lead-form-div {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: white;
+  position: fixed;
+  width: 500px;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  box-shadow: 3px 3px 3px rgb(193, 193, 193);
+}
+
+@media screen and (max-width: 700px) {
+  .product-lead-form-div {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    top:10px;
+    bottom: auto;
+    transform: translateY(0%);
+    transform: translateX(-50%);
+    width: 350px;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}
+
+.ul-bullet-points {
+  padding-left: 14px;
+}
+
+.close-form-button {
+  border: 0px;
+  background-color: #00687c;
+  color: white;
+  border-radius: 6px;
+  height: fit-content;
+}
+
+.close-button-div {
+  display: flex;
+  justify-content: space-between;
 }
