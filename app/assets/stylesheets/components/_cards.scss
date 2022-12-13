@@ -16,7 +16,7 @@
   height: 350px;
   width: auto;
   border:0ch;
-  background-color: rgba(247, 247, 247, 255);
+  background-color: white;
 }
 
 .card-image {
@@ -27,10 +27,14 @@
 
 .card-bottom {
   padding-top: 20px;
+  p {
+    font-family: "Roboto";
+  }
 }
 
 .card h3 {
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Roboto";
 }
 
 .button-card {
