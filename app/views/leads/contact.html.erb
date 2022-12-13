@@ -1,9 +1,10 @@
 <div class="contact-container">
   <h1 class="contact-header">Product Inquiry</h1>
-
+  <p>We'd be very happy to connect with you and answer your question (in most cases within 2 to 3 working days). The more details you can provide, the faster we can assign your
+     request to the right JAS Global Industries expert.</p>
   <%= simple_form_for @lead, url: contact_path, data: { turbo_method: :post } do |f| %>
     <div>
-      <%=  f.input :market, collection: Lead::MARKETS, required: true %>
+      <%=  f.input :market, collection: Lead::MARKETS, required: true, label:false, prompt: "Select a market" %>
       <%=  f.input :question, label: false, placeholder: "Your question *", required: true%>
     </div>
     <div class="contact-form-bottom">
