@@ -1,0 +1,102 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%# <div class="container-fluid"> %>
+
+    <%# <%= link_to "#", class: "navbar-brand" do %>
+      <%# <%= image_tag "logo.png" %>
+    <%# <% end %>
+
+     <div>
+    <%= image_tag "logo.png" %>
+    </div>
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+
+      <ul class="navbar-nav me-auto">
+        <%# if user_signed_in? %>
+        <%# <div class="nav-items-div-links"> %>
+          <%# <div class="nav-items-top"> %>
+            <li class="nav-item active">
+              <%= link_to "Our Company", our_company_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Product & Solutions", products_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Media Center", products_path, class: "nav-link" %>
+            </li>
+          <%# </div> %>
+          <%# <div class="nav-items-bottom"> %>
+            <li class="nav-item active">
+              <%= link_to "JAS Cares", jas_cares_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Contact Us", contact_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Locations", locations_path, class: "nav-link" %>
+            </li>
+
+          <%# </div> %>
+        </div>
+          <li class="nav-item dropdown dropdown-responsive">
+            <%= image_tag "", class: "d-none avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <%= link_to "Media Center", "#", class: "dropdown-item" %>
+              <%= link_to "Downloads", "#", class: "dropdown-item" %>
+              <%= link_to "Careers", "#", class: "dropdown-item" %>
+              <%= link_to "Contact Us", "#", class: "dropdown-item" %>
+              <%= link_to "Locations", "#", class: "dropdown-item" %>
+            </div>
+          </li>
+        <%# else %>
+          <!--li class="nav-item"-->
+            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <!--/li-->
+        <%# end %>
+      </ul>
+    </div>
+  <%# </div> %>
+</div>
+
+
+
+
+
+
+
+
+<div class="row" id="diagram-div">
+  <div class="wrapper">
+    <div class="cell" id="cell-1">
+      <h2>Over two decades<br>of experience</h2>
+    </div>
+    <div class="cell" id="cell-2">
+      <h2>X patent<br>families</h2>
+    </div>
+    <div class="cell" id="cell-3">
+      <h2>X grantet<br>patents</h2>
+    </div>
+    <div class="cell" id="cell-4">
+      <h2>X technical support<br>engineers at your request</h2>
+    </div>
+    <div class="cell" id="cell-5">
+      <h2>25% of annual revenue<br>reinvested into<br>Research & Development</h2>
+    </div>
+    <div class="cell" id="cell-6">
+      <h2>5 Research &<br>Development<br>centres<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-7">
+      <h2>X <br>manufacturing<br>plants<br>worldwide</h2>
+    </div>
+    <div class="cell" id="cell-8">
+      <h2>X strategic<br>locations<br>worldwide</h2>
+    </div>
+  </div>
+</div>

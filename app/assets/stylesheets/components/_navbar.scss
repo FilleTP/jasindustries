@@ -21,6 +21,13 @@
   box-shadow: 3px 1px 3px rgb(142, 141, 141);
 }
 
+@media screen and (max-width: 700px) {
+  .navbar-lewagon .navbar-brand img {
+    width: 90px;
+    height: 120px;
+  }
+}
+
 .container-fluid {
   align-items: flex-end!important;
 }
