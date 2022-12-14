@@ -1,3 +1,63 @@
+<div>
+  <button>Water Treatment</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Thermal Desalination", products_water_treatment_path(anchor: "thermal_desalination") %>
+      <%= link_to "Reverse Osmosis", products_water_treatment_path(anchor: "reverse_osmosis") %>
+      <%= link_to "Wastewater Treatment", products_water_treatment_path(anchor: "wastewater_treatment") %>
+      <%= link_to "Steam Boilers", products_water_treatment_path(anchor: "steam_boilers") %>
+      <%= link_to "Cooling Systems", products_water_treatment_path(anchor: "cooling_systems") %>
+      <%= link_to "Ion Exchange", products_water_treatment_path(anchor: "ion_exchange") %>
+      <%= link_to "Swimming Pools & Disinfection", products_water_treatment_path(anchor: "swimming_pools_and_disinfection") %>
+    </div>
+  <button>Mining</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Mining General", products_mining_path(anchor: "mining_general") %>
+      <%= link_to "Phosphate", products_mining_path(anchor: "phosphate") %>
+      <%= link_to "Phosphoric Acid", products_mining_path(anchor: "phosphoric_acid") %>
+      <%= link_to "Alumina Mining", products_mining_path(anchor: "alumina_mining") %>
+      <%= link_to "Mineral Processing", products_mining_path(anchor: "mineral_processing") %>
+    </div>
+    <button>Fertilizers</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Fertilizers General", products_fertilizers_path(anchor: "fertilizers_general") %>
+      <%= link_to "Coloring Agents", products_fertilizers_path(anchor: "coloring_agents") %>
+      <%= link_to "Dust Management", products_fertilizers_path(anchor: "dust_management") %>
+      <%= link_to "Anti Caking", products_fertilizers_path(anchor: "anti_caking") %>
+      <%= link_to "Potash", products_fertilizers_path(anchor: "potash") %>
+    </div>
+    <button>Oil & Gas</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Oil & Gas General", products_oil_and_gas_path(anchor: "oil_and_gas_general") %>
+    </div>
+    <button>Fireside Treatment</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Fireside Treatment General", products_fireside_treatment_path(anchor: "fireside_treatment_general") %>
+    </div>
+    <button>Construction</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Construction General", products_construction_path(anchor: "construction_general") %>
+      <%= link_to "Paint & Coating", products_construction_path(anchor: "paint_and_coating") %>
+      <%= link_to "Ceramics", products_construction_path(anchor: "ceramics") %>
+      <%= link_to "Concrete", products_construction_path(anchor: "concrete") %>
+      <%= link_to "Cement", products_construction_path(anchor: "cement") %>
+    </div>
+    <button>Home Care</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "HomeCare General", products_home_care_path(anchor: "home_care_general") %>
+    </div>
+    <button>Personal Care</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "PersonalCare General", products_personal_care_path(anchor: "personal_care_general") %>
+    </div>
+    <button>Paper & Pulp</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Paper & Pulp General", products_paper_and_pulp_path(anchor: "paper_and_pulp_general") %>
+    </div>
+    <button>Textile & Leather</button>
+    <div class="subcategory-sidebar-div">
+      <%= link_to "Textile & Leather General", products_textile_and_leather_path(anchor: "textile_and_leather_general") %>
+    </div>
+</div>
 <div class="product-solutions-container">
   <h2 class="product-solutions-header">Water Treatment</h2>
   <br>
@@ -21,7 +81,7 @@
       <li>Paper & Pulp</li>
     </ul>
   </div>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/thermal-desalination.jpg')%>');">
+  <div id="thermal_desalination" class="product-solutions-image" style="background-image: url('<%= image_url('products/thermal-desalination.jpg')%>');">
     <h2 class="image-text">Thermal Desalination</h2>
   </div>
   <p>Innovations in the water industry play a crucial role in maintaining the supply of clean water. An example of this is Thermal Desalination: turning saltwater into water suitable for everyday human consumption. Modern desalination facilities employ the process of distillation through Multi-Stage Flash Distillation (MSF) and Multi-Effect Distillation (MED). Nowadays, desalinated seawater is one of the major alternatives to fresh water, helping address water scarcity in arid and dry regions such as the Middle East, North Africa and southern Europe.</p>
@@ -36,7 +96,7 @@
     <li>Ion Exchange Resins – Anionic & Cationic</li>
   </ul>
   <p>JAS Global Industries also provides specialized technical service and support with both on-site dosage optimization and online monitoring technology applied to enhance monitoring of key operational performance parameters and live feedback.</p>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/reverse-osmosis.jpg')%>');">
+  <div id="reverse_osmosis" class="product-solutions-image" style="background-image: url('<%= image_url('products/reverse-osmosis.jpg')%>');">
     <h2 class="image-text">Reverse Osmosis</h2>
   </div>
   <p>Due to the high consumption of energy when heating the water in MSF and MED desalination systems, Membrane Desalination (Reverse Osmosis) processes utilizing specific membranes were developed and are implemented world-wide. Membrane Desalination systems are the most sustainable and cost-efficient way to meet this demand due to the recent improvements in desalination technology allowing the utilization of water from saline sources – typically brackish and seawater. Reverse Osmosis (RO) plants can successfully remove salt, bacteria, and other deposits from seawater and chemically treat the water to provide usable freshwater to meet the growing demand.</p>
@@ -53,7 +113,7 @@
     <li>Ion Exchange Resins</li>
     <li>Disinfectants & Sanitizers</li>
   </ul>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/waste-water.jpg')%>');">
+  <div id="wastewater_treatment" class="product-solutions-image" style="background-image: url('<%= image_url('products/waste-water.jpg')%>');">
     <h2 class="image-text">Wastewater Treatment</h2>
   </div>
   <p>Most factory activities and industrial processes use tremendous amounts of water which can lead to a significant amount of wastewater. While manufacturers do implement strict water efficiency measures and make effort to recycle the water, wastewater is unavoidable in industrial processes. As a result, this wastewater requires on-site treatment before being discharged to prevent damaging the environment as well as sewer surcharge fees. Depending on the industry and the type of wastewater generated, JAS Global Industries can provide you with the specific water treatment additives for all your wastewater treatment needs, including reducing solid waste.</p>
@@ -80,7 +140,7 @@
     <li>Flocculants (Anionic & Cationic)</li>
     <li>Odor Control Agents</li>
   </ul>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/steam-boilers.jpg')%>');">
+  <div id="steam_boilers" class="product-solutions-image" style="background-image: url('<%= image_url('products/steam-boilers.jpg')%>');">
     <h2 class="image-text">Steam Boilers</h2>
   </div>
   <p>To maintain optimal operational efficiency and performance of steam generating systems and steam boilers, proactively addressing common issues such as scale formation, corrosion, and sludge deposition is critical. Our boiler water treatment expertise combines state-of-the-art chemistry solutions with application experience to target these issues. Whether your goal is to extend your equipment’s lifespan or improve production, you can rely on <strong>JAS Global Industries</strong> to provide a custom-made solution that will cost-effectively address all your boiler treatment requirements.</p>
@@ -96,7 +156,7 @@
     <li>Deposit Control Agents</li>
     <li>Oxygen Scavengers</li>
   </ul>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/cooling-systems.jpg')%>');">
+  <div id="cooling_systems" class="product-solutions-image" style="background-image: url('<%= image_url('products/cooling-systems.jpg')%>');">
     <h2 class="image-text">Cooling Systems</h2>
   </div>
   <p>Performance, reliability, and operational efficiency of cooling towers and heat exchangers can be deteriorated by corrosion, microbiological growth, and deposition. If not treated appropriately, these can lead to more severe damages, such as unscheduled outages and, as a result, higher maintenance costs. To preserve the performance of industrial cooling systems, <strong>JAS Global Industries</strong> offers a diverse range of chemical solutions that can be applied at various pH levels.</p>
@@ -113,7 +173,7 @@
   <p>Our range of CWT-0 products are phosphate, phosphonate, and acrylate scale and corrosion inhibitors for open evaporative cooling systems.</p>
   <p>Our range of CWT-C products are nitrite, molybdate, and phosphonate-based corrosion and scale inhibitors for closed cooling systems.</p>
   <p>Our G-Strike W biocides range is based on isothiazolines and quaternary ammonium for control of microbiological growth in both open and closed cooling systems.</p>
-  <div class="product-solutions-image" style="background-image: url('<%= image_url('products/thermal-desalination.jpg')%>');">
+  <div id="ion_exchange" class="product-solutions-image" style="background-image: url('<%= image_url('products/thermal-desalination.jpg')%>');">
     <h2 class="image-text">Ion Exchange</h2>
   </div>
   <p>Our UltraPure® range supplies high-capacity premium-grade conventional gel and macroporous ion exchange resins, designed for use in water softening, de-alkalization, deionization, and chemical processing applications, for both separate and mixed bed ion exchange plants.</p>
@@ -123,7 +183,7 @@
     <li>Cationic Exchange Resin</li>
     <li>Mixed-bed Exchange Resin</li>
   </ul>
-   <div class="product-solutions-image" style="background-image: url('<%= image_url('products/swimming-pool.jpg')%>');">
+   <div id="swimming_pools_and_disinfection" class="product-solutions-image" style="background-image: url('<%= image_url('products/swimming-pool.jpg')%>');">
     <h2 class="image-text">Swimming Pools & Disinfection</h2>
   </div>
   <p>Swimming pool operators and water/wastewater treatment professionals require disinfectants that are safe, effective, economical and easy to use. Our CLR® range of calcium hypochlorite tablets are available in quick-dissolving granules that offer superior performance, safety, and convenience for treatment of potable water, industrial water, sewage/wastewater, and swimming pools. In addition, our AquaGuard® and AquaClear® products offer a full range of other algaecide and clarifiers.</p>
