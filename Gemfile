@@ -69,3 +69,4 @@ gem 'country_select'
 gem "cloudinary"
 
 gem 'stimulus-rails'
+gem "devise"
