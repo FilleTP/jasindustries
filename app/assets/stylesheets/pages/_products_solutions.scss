@@ -13,6 +13,12 @@
   color: #00687c;
 }
 
+.product-solutions-header-bottom {
+  font-weight: bolder;
+  color: #00687c;
+  margin-bottom: 50px;
+}
+
 .subheader-products {
   color: #00687c;
   font-weight: 300;
@@ -139,4 +145,15 @@
 .close-button-div {
   display: flex;
   justify-content: space-between;
+}
+
+.request-information-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+  .request-information-container {
+    width: 100%;
+  }
 }
