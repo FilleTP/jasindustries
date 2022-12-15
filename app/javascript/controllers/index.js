@@ -12,3 +12,6 @@ application.register("modal_reveal", ModalRevealController)
 
 import AlertController from "./alert_controller"
 application.register("alert", AlertController)
+
+import SidebarController from "./sidebar_controller"
+application.register("sidebar", SidebarController)

@@ -1,6 +1,7 @@
 .product-solutions-container {
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
+  // margin: 0 auto;
+  display: flex;
   padding-top: 100px;
   h3 {
     font-family: "Roboto";
@@ -9,6 +10,25 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .product-solutions-container {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+}
+
+
+.product-main-right-div {
+  margin-left: 280px;
+}
+
+@media screen and (max-width: 800px) {
+  .product-main-right-div {
+    justify-self: center;
+    margin-left: 0px;
+  }
+}
 .product-solutions-header {
   font-weight: bolder;
   color: #00687c;
@@ -23,6 +43,12 @@
 .subheader-products {
   color: #00687c;
   font-weight: 300;
+}
+
+.subheader-products-mining {
+  color: #00687c;
+  font-weight: 300;
+  font-size: larger;
 }
 
 .image-text {
