@@ -70,3 +70,4 @@ gem "cloudinary"
 
 gem 'stimulus-rails'
 gem "devise"
+gem "geocoder"
