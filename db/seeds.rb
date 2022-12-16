@@ -2,6 +2,7 @@ puts "Deleting Records..."
 Product.destroy_all
 Category.destroy_all
 Market.destroy_all
+Country.destroy_all
 
 
 Category.create!(name: "Water Treatment")
@@ -35,3 +36,17 @@ Product.create!(name: "UltraPure®", category: Category.find_by(name: "Water Tre
 Product.create!(name: "UltraSan®", category: Category.find_by(name: "Water Treatment"), market: Market.find_by(name: "Thermal Desalination"))
 
 puts "Products created"
+
+Country.create!(address: "Brazil")
+Country.create!(address: "Jordan")
+Country.create!(address: "Spain")
+Country.create!(address: "Egypt")
+Country.create!(address: "Morocco")
+Country.create!(address: "Saudi Arabia")
+Country.create!(address: "United Arab Emirates")
+Country.create!(address: "Indonesia")
+Country.create!(address: "China")
+Country.create!(address: "Hong Kong")
+Country.create!(address: "India")
+
+puts "Countries created"

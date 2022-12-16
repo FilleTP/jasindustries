@@ -15,3 +15,6 @@ application.register("alert", AlertController)
 
 import SidebarController from "./sidebar_controller"
 application.register("sidebar", SidebarController)
+
+import MapController from "./map_controller"
+application.register("map", MapController)
