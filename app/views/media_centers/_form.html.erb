@@ -1,0 +1,9 @@
+<%= simple_form_for @media_center do |f| %>
+  <div class="field">
+    <%= f.input :title %>
+    <%= f.input :photo, as: :file %>
+    <%= f.label :content %>
+    <%= f.rich_text_area :content %>
+  </div>
+  <%= f.submit "Save" %>
+<% end %>

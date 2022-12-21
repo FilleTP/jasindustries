@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   get "products/textile-and-leather", to: "products#textile_and_leather"
   post "products/textile-and-leather", to: "products#create"
 
+  resources :media_centers
+
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

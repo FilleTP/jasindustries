@@ -10,7 +10,11 @@ import "channels"
 require('jquery')
 import "bootstrap"
 import "../controllers"
+import "../trix-editor-overrides"
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require("trix")
+require("@rails/actiontext")

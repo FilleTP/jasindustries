@@ -1,0 +1,57 @@
+.media-center-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+  overflow-x: hidden;
+}
+
+.media-center-header {
+  color: #00687c;
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-bottom: 70px;
+}
+
+.media-main-header {
+  color: #00687c;
+  margin-bottom: 70px;
+  font-family: "Roboto";
+  text-align: center;
+}
+.trix-content {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.media-center-card {
+  display: flex;
+}
+
+.media-center-card-image-div {
+  width: 50%;
+  height: 300px;
+}
+
+.cards-div-media {
+  overflow-x: hidden;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-width: auto;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.card-media {
+  height: 350px;
+  width: auto;
+  border: 0ch;
+  background-color: white;
+}
+
+.card-media h3 {
+  font-size: 16px;
+  font-family: "Roboto";
+  margin: 0px;
+}

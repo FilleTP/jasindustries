@@ -36,6 +36,21 @@
   color: black;
   font-family: "Roboto";
   font-weight: 300;
+  &:hover {
+    color: black;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+}
+
+.nav-link:hover {
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: 2px solid #00687c;
+  }
 }
 
 #navbarDropdown {

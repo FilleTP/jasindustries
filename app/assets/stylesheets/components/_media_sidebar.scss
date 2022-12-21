@@ -1,0 +1,10 @@
+.media-sidebar-header {
+  text-decoration: none;
+  font-family: "Roboto";
+  color: black;
+  font-weight: 300;
+   &:hover {
+    font-weight: bold;
+    color: #00687c;
+   }
+}
