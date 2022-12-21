@@ -1,7 +1,7 @@
-  <div class="product-sidebar-container" data-controller="sidebar" style="width:200px;">
+  <div class="media-sidebar-container" data-controller="sidebar" style="width:200px;">
     <p class="solutions-by-market-desktop"><strong>Posts</strong></p>
-    <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Search Solutions by Market</strong></p>
-    <div class="sidebar-mobile" data-sidebar-target="mobileSidebar">
+    <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Posts</strong></p>
+    <div class="media-sidebar-mobile" data-sidebar-target="mobileSidebar">
     <%  @media_centers.each do |media_center| %>
     <%= link_to media_center.title, media_center_path(media_center), class: "media-sidebar-header" %>
     <hr class="sidebar-border">

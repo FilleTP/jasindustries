@@ -1,5 +1,5 @@
 .cards-container {
-  width: 100vw;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -26,6 +26,7 @@
 }
 
 .card-bottom {
+  height: 100px;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -40,6 +41,8 @@
   font-size: 20px;
   font-family: "Roboto";
   margin: 0px;
+  overflow: scroll;
+  height: 50px;
 }
 
 .button-card {
@@ -50,6 +53,7 @@
   padding: 4px 12px;
   background-color: rgba(0, 104, 124, 255);
   color: white;
+  margin-top: auto;
 
 }
 
@@ -57,7 +61,7 @@
   .cards-div {
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     row-gap: 40px;
   }
   .card {
