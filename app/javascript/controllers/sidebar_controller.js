@@ -9,7 +9,8 @@ export default class extends Controller {
 
   connect() {
     console.log("HELLO sidebar")
-
+    const sidebar = document.querySelector(".product-sidebar-container")
+    sidebar.style.position = "fixed"
   }
 
   toggle(event) {
@@ -47,4 +48,9 @@ export default class extends Controller {
         this.mobileSidebarTarget.style.display = "none";
       }
   }
+
+  scroll(event) {
+    console.log("scrolling");
+  }
+
 }

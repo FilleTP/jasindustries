@@ -1,4 +1,6 @@
 .product-sidebar-container {
+  height: 400px;
+  overflow-y: scroll;
   width: max-content;
   position: fixed;
   left: 40px;
@@ -13,6 +15,7 @@
     position: sticky;
     margin-top: 70px;
     background-color: white;
+    overflow: visible;
 
   }
 }

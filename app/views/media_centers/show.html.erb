@@ -1,6 +1,19 @@
+<div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
+    <p class="solutions-by-market-desktop"><strong>Posts</strong></p>
+    <p class="solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong></p>
+    <div class="media-sidebar-mobile" data-media_sidebar-target="mobileSidebar">
+    <%  @media_centers.each do |media_center| %>
+    <%= link_to media_center.title, media_center_path(media_center), class: "media-sidebar-header" %>
+    <hr class="sidebar-border">
+    <% end %>
+    </div>
+  </div>
+
 <div class="media-center-container">
-  <div class="trix-content">
-    <h2 class="media-center-header"><%= @media_center.title %></h2>
-    <%= @media_center.content %>
+  <div class="media-center-show-div">
+    <div class="trix-content">
+      <h2 class="media-center-header"><%= @media_center.title %></h2>
+      <%= @media_center.content %>
+    </div>
   </div>
 </div>

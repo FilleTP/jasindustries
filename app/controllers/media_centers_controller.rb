@@ -18,6 +18,7 @@ class MediaCentersController < ApplicationController
   end
 
   def show
+    @media_centers = MediaCenter.all
     @media_center = MediaCenter.with_rich_text_content_and_embeds.find(params[:id])
   end
 

@@ -1,7 +1,7 @@
-  <div class="media-sidebar-container" data-controller="sidebar" style="width:200px;">
-    <p class="solutions-by-market-desktop"><strong>Posts</strong></p>
-    <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Posts</strong></p>
-    <div class="media-sidebar-mobile" data-sidebar-target="mobileSidebar">
+  <div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
+    <p class="media-solutions-by-market-desktop"><strong>Posts</strong></p>
+    <p class="media-solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong></p>
+    <div class="media-sidebar-mobile" data-media_sidebar-target="mobileSidebar">
     <%  @media_centers.each do |media_center| %>
     <%= link_to media_center.title, media_center_path(media_center), class: "media-sidebar-header" %>
     <hr class="sidebar-border">
@@ -11,7 +11,7 @@
 
 <div class="media-center-container">
   <h1 class="media-main-header">Media Center</h1>
-    <div class="cards-container">
+    <div class="cards-container-media">
       <div class="cards-div-media">
         <% @media_centers.each do |media_center| %>
           <div class="card-media">

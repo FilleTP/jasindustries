@@ -2,12 +2,13 @@
     @media screen and (max-width: 800px) {
       .product-sidebar-container {
         height: 30px;
-        top: 300px;
+        top: 0px!important;
         position: sticky;
         background-color: white;
       }
     }
   </style>
+
   <div class="product-sidebar-container" style="top:300px;"data-controller="sidebar">
     <p class="solutions-by-market-desktop"><strong>Solutions by Market</strong></p>
     <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Search Solutions by Market</strong></p>
@@ -82,106 +83,134 @@
     </div>
     </div>
   </div>
+<div>
+  <div id="product-banner">
+    <h1>Products and Solutions</h1>
+    <div class="product-container" style="display:flex;justify-content:center;">
+      <ul>
+        <li>
+          <%= link_to products_water_treatment_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "1-WT.jpg", alt: "" %>
+              Water<br>
+              Treatment
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_mining_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "2-M.jpg", alt: "" %>
+              Mining
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_fertilizers_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "3-Fert.jpg", alt: "" %>
+              Fertilizers
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_oil_and_gas_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "4-O&G.jpg", alt: "" %>
+              Oil & Gas
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_fireside_treatment_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "5-F.jpg", alt: "" %>
+              Fireside<br>
+              Treatment
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_construction_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "6-C.jpg", alt: "" %>
+              Construction
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_home_care_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "7-HC.jpg", alt: "" %>
+              HomeCare
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_personal_care_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "8-PC.jpg", alt: "" %>
+              PersonalCare
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_paper_and_pulp_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "9-P&P.jpg", alt: "" %>
+              Paper<br>
+              & Pulp
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_textile_and_leather_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "10-T&L.jpg", alt: "" %>
+              Textile<br>
+              & Leather
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<div id="product-banner">
-  <h1>Products and Solutions</h1>
-  <div class="product-container" style="display:flex;justify-content:center;">
-    <ul>
-      <li>
-        <%= link_to products_water_treatment_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "1-WT.jpg", alt: "" %>
-            Water<br>
-            Treatment
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_mining_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "2-M.jpg", alt: "" %>
-            Mining
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_fertilizers_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "3-Fert.jpg", alt: "" %>
-            Fertilizers
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_oil_and_gas_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "4-O&G.jpg", alt: "" %>
-            Oil & Gas
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_fireside_treatment_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "5-F.jpg", alt: "" %>
-            Fireside<br>
-            Treatment
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_construction_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "6-C.jpg", alt: "" %>
-            Construction
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_home_care_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "7-HC.jpg", alt: "" %>
-            HomeCare
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_personal_care_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "8-PC.jpg", alt: "" %>
-            PersonalCare
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_paper_and_pulp_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "9-P&P.jpg", alt: "" %>
-            Paper<br>
-            & Pulp
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_textile_and_leather_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "10-T&L.jpg", alt: "" %>
-            Textile<br>
-            & Leather
-          </div>
-        <% end %>
-      </li>
-    </ul>
+
+
+
+  <div class="product-solutions-container">
+    <div class="product-main-right-div">
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+    </div>
   </div>
 </div>
 
 
+<%# <script>
 
 
-<div class="product-solutions-container">
-  <div class="product-main-right-div">
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-  </div>
-</div>
+  const scrolling = () => {
+    window.onscroll = function() {
+        const windowHeight = window.innerHeight
+        const sidebar = document.querySelector(".product-sidebar-container");
+        console.log(document.body.scrollHeight - windowHeight - 200)
+        if (scrollY > document.body.scrollHeight - windowHeight - 200 ) {
+          const sideposition = document.body.scrollHeight - 600;
+          sidebar.style.position = "absolute";
+          // sidebar.style.top = `${sideposition}px`;
+        } else if (scrollY < document.body.scrollHeight - windowHeight - 200) {
+          sidebar.style.position = "fixed";
+          sidebar.style.top = "300px";
+          // sidebar.style.bottom = "0px";
+        }
+
+
+    }
+  }
+  if (location.pathname == "/products") {
+    scrolling()
+  }
+</script> %>

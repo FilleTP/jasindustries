@@ -18,16 +18,19 @@
   position: fixed;
   left: 40px;
   top: 205px;
+  height: 400px;
+  overflow-y: scroll;
   background-color: white;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .media-sidebar-container {
     height: 30px;
     top: 0px;
     position: sticky;
     margin-top: 70px;
     background-color: white;
+    overflow: visible;
 
   }
 }
@@ -98,25 +101,25 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .solutions-by-market-desktop {
+  .media-solutions-by-market-desktop {
     display: block;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .solutions-by-market-desktop {
+  .media-solutions-by-market-desktop {
     display: none;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .solutions-by-market-mobile {
+  .media-solutions-by-market-mobile {
     display: none;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .solutions-by-market-mobile {
+  .media-solutions-by-market-mobile {
     display: block;
     background-color: #00687c;
     color: white;
@@ -129,7 +132,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .solutions-by-market-mobile:after {
+  .media-solutions-by-market-mobile:after {
     content: "";
     display: block;
     background-image: url("arrow.svg");
@@ -160,6 +163,7 @@
     display: none;
     padding: 5px;
     border: 1px solid gray;
+    overflow-x: hidden;
   }
 }
 
