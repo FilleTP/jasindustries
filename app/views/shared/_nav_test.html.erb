@@ -1,4 +1,4 @@
-
+<%#
 
 
 <style>
@@ -6,6 +6,11 @@
 .topnav {
   background-color: #f1f2f2;
   overflow: hidden;
+  height: 100px;
+  /* display: flex;
+  align-items: end;
+  justify-content: end; */
+
 }
 
 /* Style the links inside the navigation bar */
@@ -17,6 +22,8 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  font-family: "Roboto";
+  font-weight: 300;
 }
 
 /* Change the color of links on hover */
@@ -37,8 +44,8 @@
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 1000px) {
+  .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -46,8 +53,11 @@
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {
+    position: relative;
+    /* display: block; */
+    }
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
@@ -68,16 +78,205 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="topnav" id="myTopnav">
-  <%= link_to "Our Company", our_company_path %>
-  <%= link_to "Product & Solutions", products_path %>
-  <%= link_to "Media Center", media_centers_path %>
-  <%= link_to "JAS Cares", jas_cares_path %>
-  <%= link_to "Contact Us", contact_path %>
-  <%= link_to "Locations", locations_path %>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
+  <%= link_to "Our Company", our_company_path %>
+  <%# <%= link_to "Product & Solutions", products_path %>
+  <%# <%= link_to "Media Center", media_centers_path %>
+  <%# <%= link_to "JAS Cares", jas_cares_path %>
+  <%# <%= link_to "Contact Us", contact_path %>
+  <%# <%= link_to "Locations", locations_path %>
+  <%# <a href="javascript:void(0);" class="icon" onclick="myFunction()"> %>
+    <%# <i class="fa fa-bars"></i> %>
+  <%# </a> %>
+<%# </div> %>
+
+<%# <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>  %>
 
 <%# <a href="#home" class="active">Home</a> %>
+
+
+<style>
+  /* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #f1f2f2;
+  font-family: "Roboto";
+  height: 100px;
+  justify-content: end;
+  align-items: end;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 300;
+  font-family: "Roboto";
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #00687c;
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  /* min-height: 200px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  color: black;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+@media screen and (min-width: 1000px) {
+  .dropbtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dropbtn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .links-hide {
+    display: none;
+  }
+}
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {
+  display: block;
+  position: fixed;
+} */
+</style>
+<div class="navbar">
+  <div class="logo-link-div">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "logo.png" %>
+    <% end %>
+  </div>
+  <%= link_to "Our Company", our_company_path, class: "links-hide" %>
+  <%= link_to "Product & Solutions", products_path, class: "links-hide" %>
+  <%= link_to "Media Center", media_centers_path, class: "links-hide" %>
+  <%= link_to "JAS Cares", jas_cares_path, class: "links-hide" %>
+  <%= link_to "Contact Us", contact_path, class: "links-hide" %>
+  <%= link_to "Locations", locations_path, class: "links-hide" %>
+  <div class="dropdown">
+    <button id="dropdown" class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div id="dropdowns" class="dropdown-content">
+      <%= link_to "Our Company", our_company_path %>
+      <%= link_to "Product & Solutions", products_path %>
+      <%= link_to "Media Center", media_centers_path %>
+      <%= link_to "JAS Cares", jas_cares_path %>
+      <%= link_to "Contact Us", contact_path %>
+      <%= link_to "Locations", locations_path %>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  // const html = document.documentElement;
+  // const menu = document.querySelector(".dropdown-content")
+
+  function openMenu(){
+    // add class to the menu to make it show
+    const menu = document.querySelector(".dropdown-content")
+    menu.style.display = "block"
+    menu.style.position = "fixed"
+    // add event listener to the html element
+    document.documentElement.addEventListener('click', closeMenuOnBodyClick);
+  }
+
+  function closeMenu(){
+    // add class to the menu to make it show
+    const menu = document.querySelector(".dropdown-content")
+    menu.style.display = "none"
+    menu.style.position = "absolute"
+    // add event listener to the html element
+    document.documentElement.removeEventListener('click', closeMenuOnBodyClick);
+  }
+
+
+  function closeMenuOnBodyClick(event){
+    // get the event path
+    const path = event.composedPath();
+    // check if it has the menu element
+    if (path.some(elem => elem.id === 'dropdown') || path.some(elem => elem.id === 'dropdowns')) {
+      // terminate this function if it does
+      return;
+    }
+    closeMenu();
+  }
+  document.querySelector(".dropbtn").addEventListener("click", (e)=> {
+    const menu = document.querySelector(".dropdown-content")
+    console.log("hey")
+    if (menu.style.display == "block") {
+      closeMenu();
+    } else if (menu.style.display == "" || menu.style.display == "none") {
+      openMenu();
+    }
+
+  })
+
+</script>

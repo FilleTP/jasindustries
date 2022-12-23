@@ -25,6 +25,15 @@
   font-weight: lighter;
 }
 
+.footer-text a {
+  font-weight: lighter;
+  color: black;
+}
+.footer-text a:hover {
+  font-weight: lighter;
+  color: rgba(8, 109, 127, 255);
+}
+
 .social-media {
   display: flex;
   margin-top: 15px;
