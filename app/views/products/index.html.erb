@@ -1,187 +1,131 @@
-  <style>
-    @media screen and (max-width: 800px) {
-      .product-sidebar-container {
-        height: 30px;
-        top: 300px;
-        position: sticky;
-        background-color: white;
-      }
+
+  <div id="product-banner" class="product-banner-index">
+    <h1>Products and Solutions</h1>
+    <div class="product-container" style="display:flex;justify-content:center;">
+      <ul>
+        <li>
+          <%= link_to products_water_treatment_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "1-WT.jpg", alt: "" %>
+              Water<br>
+              Treatment
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_mining_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "2-M.jpg", alt: "" %>
+              Mining
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_fertilizers_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "3-Fert.jpg", alt: "" %>
+              Fertilizers
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_oil_and_gas_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "4-O&G.jpg", alt: "" %>
+              Oil & Gas
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_fireside_treatment_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "5-F.jpg", alt: "" %>
+              Fireside<br>
+              Treatment
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_construction_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "6-C.jpg", alt: "" %>
+              Construction
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_home_care_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "7-HC.jpg", alt: "" %>
+              HomeCare
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_personal_care_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "8-PC.jpg", alt: "" %>
+              PersonalCare
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_paper_and_pulp_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "9-P&P.jpg", alt: "" %>
+              Paper<br>
+              & Pulp
+            </div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_textile_and_leather_path do %>
+            <div class="product-banner-div">
+              <%= image_tag "10-T&L.jpg", alt: "" %>
+              Textile<br>
+              & Leather
+            </div>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <div class="product-solutions-container">
+    <div class="product-main-right-div">
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+      <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
+    </div>
+  </div>
+</div>
+
+
+<%# <script>
+
+
+  const scrolling = () => {
+    window.onscroll = function() {
+        const windowHeight = window.innerHeight
+        const sidebar = document.querySelector(".product-sidebar-container");
+        console.log(document.body.scrollHeight - windowHeight - 200)
+        if (scrollY > document.body.scrollHeight - windowHeight - 200 ) {
+          const sideposition = document.body.scrollHeight - 600;
+          sidebar.style.position = "absolute";
+          // sidebar.style.top = `${sideposition}px`;
+        } else if (scrollY < document.body.scrollHeight - windowHeight - 200) {
+          sidebar.style.position = "fixed";
+          sidebar.style.top = "300px";
+          // sidebar.style.bottom = "0px";
+        }
+
+
     }
-  </style>
-  <div class="product-sidebar-container" style="top:300px;"data-controller="sidebar">
-    <p class="solutions-by-market-desktop"><strong>Solutions by Market</strong></p>
-    <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Search Solutions by Market</strong></p>
-    <div class="sidebar-mobile" data-sidebar-target="mobileSidebar">
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Water Treatment</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Thermal Desalination", products_water_treatment_path(anchor: "thermal_desalination") %>
-      <%= link_to "Reverse Osmosis", products_water_treatment_path(anchor: "reverse_osmosis") %>
-      <%= link_to "Wastewater Treatment", products_water_treatment_path(anchor: "wastewater_treatment") %>
-      <%= link_to "Steam Boilers", products_water_treatment_path(anchor: "steam_boilers") %>
-      <%= link_to "Cooling Systems", products_water_treatment_path(anchor: "cooling_systems") %>
-      <%= link_to "Ion Exchange", products_water_treatment_path(anchor: "ion_exchange") %>
-      <%= link_to "Swimming Pools & Disinfection", products_water_treatment_path(anchor: "swimming_pools_and_disinfection") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Mining</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Mining General", products_mining_path(anchor: "mining_general") %>
-      <%= link_to "Phosphate", products_mining_path(anchor: "phosphate") %>
-      <%= link_to "Phosphoric Acid", products_mining_path(anchor: "phosphoric_acid") %>
-      <%= link_to "Alumina Mining", products_mining_path(anchor: "alumina_mining") %>
-      <%= link_to "Mineral Processing", products_mining_path(anchor: "mineral_processing") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Fertilizers</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Fertilizers General", products_fertilizers_path(anchor: "fertilizers_general") %>
-      <%= link_to "Coloring Agents", products_fertilizers_path(anchor: "coloring_agents") %>
-      <%= link_to "Dust Management", products_fertilizers_path(anchor: "dust_management") %>
-      <%= link_to "Anti Caking", products_fertilizers_path(anchor: "anti_caking") %>
-      <%= link_to "Potash", products_fertilizers_path(anchor: "potash") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Oil & Gas</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Oil & Gas General", products_oil_and_gas_path(anchor: "oil_and_gas_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Fireside Treatment</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Fireside Treatment General", products_fireside_treatment_path(anchor: "fireside_treatment_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Construction</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Construction General", products_construction_path(anchor: "construction_general") %>
-      <%= link_to "Paint & Coating", products_construction_path(anchor: "paint_and_coating") %>
-      <%= link_to "Ceramics", products_construction_path(anchor: "ceramics") %>
-      <%= link_to "Concrete", products_construction_path(anchor: "concrete") %>
-      <%= link_to "Cement", products_construction_path(anchor: "cement") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">HomeCare</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "HomeCare General", products_home_care_path(anchor: "home_care_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">PersonalCare</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "PersonalCare General", products_personal_care_path(anchor: "personal_care_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Paper & Pulp</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Paper & Pulp General", products_paper_and_pulp_path(anchor: "paper_and_pulp_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Textile & Leather</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Textile & Leather General", products_textile_and_leather_path(anchor: "textile_and_leather_general") %>
-    </div>
-    </div>
-  </div>
-
-<div id="product-banner">
-  <h1>Products and Solutions</h1>
-  <div class="product-container" style="display:flex;justify-content:center;">
-    <ul>
-      <li>
-        <%= link_to products_water_treatment_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "1-WT.jpg", alt: "" %>
-            Water<br>
-            Treatment
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_mining_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "2-M.jpg", alt: "" %>
-            Mining
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_fertilizers_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "3-Fert.jpg", alt: "" %>
-            Fertilizers
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_oil_and_gas_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "4-O&G.jpg", alt: "" %>
-            Oil & Gas
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_fireside_treatment_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "5-F.jpg", alt: "" %>
-            Fireside<br>
-            Treatment
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_construction_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "6-C.jpg", alt: "" %>
-            Construction
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_home_care_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "7-HC.jpg", alt: "" %>
-            HomeCare
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_personal_care_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "8-PC.jpg", alt: "" %>
-            PersonalCare
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_paper_and_pulp_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "9-P&P.jpg", alt: "" %>
-            Paper<br>
-            & Pulp
-          </div>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to products_textile_and_leather_path do %>
-          <div class="product-banner-div">
-            <%= image_tag "10-T&L.jpg", alt: "" %>
-            Textile<br>
-            & Leather
-          </div>
-        <% end %>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-<div class="product-solutions-container">
-  <div class="product-main-right-div">
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-    <p>Meeting or exceeding the most stringent technical and environmental specifications, our specialty mining reagents help customers in the mining industry improve their productivity and reduce operating costs while meeting complex metallurgical challenges. Solvay is the leading solutions provider and partner to the mining industry. We leverage more than 100 years of industry knowledge, applications expertise and on-site technical support to optimize mining operations worldwide in mineral processing, mineral refining and solvent extraction.</p>
-  </div>
-</div>
+  }
+  if (location.pathname == "/products") {
+    scrolling()
+  }
+</script> %>

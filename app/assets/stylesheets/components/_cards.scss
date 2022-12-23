@@ -1,5 +1,5 @@
 .cards-container {
-  width: 100vw;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -26,31 +26,42 @@
 }
 
 .card-bottom {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   p {
     font-family: "Roboto";
   }
 }
 
+
+
 .card h3 {
   font-size: 20px;
   font-family: "Roboto";
+  margin: 0px;
+  overflow: scroll;
+  height: 50px;
 }
 
 .button-card {
+  display: block;
   text-decoration: none;
   width: max-content;
   font-size: 10px;
   padding: 4px 12px;
   background-color: rgba(0, 104, 124, 255);
   color: white;
+  margin-top: auto;
+
 }
 
 @media screen and (max-width: 900px) {
   .cards-div {
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     row-gap: 40px;
   }
   .card {

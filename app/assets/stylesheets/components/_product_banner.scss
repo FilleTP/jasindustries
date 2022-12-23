@@ -33,6 +33,21 @@
   }
 }
 
+.product-banner-index {
+  padding-top: 50px!important;
+}
+
+@media screen and (max-width: 900px) {
+  .product-banner-index {
+    // padding-top: 100px!important;
+  }
+  #product-banner h1 {
+    margin-bottom: 40px;
+  }
+
+}
+
+
 #product-banner ul li {
   margin:auto;
   // width: 200px;

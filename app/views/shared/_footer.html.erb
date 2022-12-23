@@ -2,15 +2,15 @@
   <div class="footer-left">
     <ul id="footer-ul-left">
       <li class="footer-header">Careers</li>
-      <li class="footer-text">Contact Us</li>
+      <li class="footer-text"><%= link_to "Contact Us", contact_path %></li>
     </ul>
     <ul>
       <li class="footer-header">Locations</li>
-      <li class="footer-text ul-footer-middle">Asia Pacific</li>
-      <li class="footer-text ul-footer-middle">Latin America</li>
-      <li class="footer-text ul-footer-middle">Middle East</li>
-      <li class="footer-text ul-footer-middle">North Africa</li>
-      <li class="footer-text ul-footer-middle">Europe</li>
+      <li class="footer-text ul-footer-middle"><%= link_to "Asia Pacific",locations_path(anchor: "Asia_Pacific") %></li>
+      <li class="footer-text ul-footer-middle"><%= link_to "Latin America",locations_path(anchor: "Latin_America") %></li>
+      <li class="footer-text ul-footer-middle"><%= link_to "Middle East",locations_path(anchor: "Middle_East") %></li>
+      <li class="footer-text ul-footer-middle"><%= link_to "North Africa",locations_path(anchor: "North_Africa") %></li>
+      <li class="footer-text ul-footer-middle"><%= link_to "Europe",locations_path(anchor: "Europe") %></li>
     </ul>
     <ul>
       <li class="footer-header">Social Media</li>
@@ -28,5 +28,5 @@
       <li class="footer-text">JAS Global Industries Privacy & Cookie Policy <br>Terms & Conditions</li>
     </ul>
   </div>
-  <p>© JAS Global Industries 2022</p>
+  <p>© JAS Global Industries <%= Date.today.year %></p>
 </div>

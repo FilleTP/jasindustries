@@ -10,7 +10,37 @@ import "channels"
 require('jquery')
 import "bootstrap"
 import "../controllers"
+import "../trix-editor-overrides"
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require("trix")
+require("@rails/actiontext")
+
+
+// document.addEventListener('turbo:load', () => {
+//   if (location.pathname == "/producs") {
+//     scrolling()
+//   }
+
+// })
+// const scrolling = () => {
+//   window.onscroll = function () {
+//     const windowHeight = window.innerHeight
+//     const sidebar = document.querySelector(".product-sidebar-container");
+//     console.log(document.body.scrollHeight - windowHeight - 200)
+//     if (scrollY > document.body.scrollHeight - windowHeight - 200) {
+//       const sideposition = document.body.scrollHeight - 600;
+//       sidebar.style.position = "absolute";
+//       // sidebar.style.top = `${sideposition}px`;
+//     } else if (scrollY < document.body.scrollHeight - windowHeight - 200) {
+//       sidebar.style.position = "fixed";
+//       sidebar.style.top = "300px";
+//       // sidebar.style.bottom = "0px";
+//     }
+
+
+//   }
+// }
