@@ -43,15 +43,15 @@
 //   }
 // }
 
-// .nav-link:hover {
-//   &:after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     width: 30px;
-//     border-bottom: 2px solid #00687c;
-//   }
-// }
+.nav-link:hover {
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: 2px solid #00687c;
+  }
+}
 
 // #navbarDropdown {
 //   cursor: pointer;

@@ -104,115 +104,12 @@ function myFunction() {
 <%# <a href="#home" class="active">Home</a> %>
 
 
-<style>
-  /* Navbar container */
-.navbar {
-  overflow: hidden;
-  background-color: #f1f2f2;
-  font-family: "Roboto";
-  height: 100px;
-  justify-content: end;
-  align-items: end;
-}
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black;
-  font-weight: 300;
-  font-family: "Roboto";
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: black;
-  font-weight: 300;
-  font-family: "Roboto";
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #00687c;
-  color: white;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  /* min-height: 200px; */
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  color: black;
-  font-weight: 300;
-  font-family: "Roboto";
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-@media screen and (min-width: 1000px) {
-  .dropbtn {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .dropbtn {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .links-hide {
-    display: none;
-  }
-}
-
-/* Show the dropdown menu on hover */
-/* .dropdown:hover .dropdown-content {
-  display: block;
-  position: fixed;
-} */
-</style>
-<div class="navbar">
-  <div class="logo-link-div">
-    <%= link_to root_path, class: "navbar-brand" do %>
+<%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo.png" %>
     <% end %>
-  </div>
+<div class="navbar">
+
   <%= link_to "Our Company", our_company_path, class: "links-hide" %>
   <%= link_to "Product & Solutions", products_path, class: "links-hide" %>
   <%= link_to "Media Center", media_centers_path, class: "links-hide" %>
@@ -220,8 +117,8 @@ function myFunction() {
   <%= link_to "Contact Us", contact_path, class: "links-hide" %>
   <%= link_to "Locations", locations_path, class: "links-hide" %>
   <div class="dropdown">
-    <button id="dropdown" class="dropbtn">Dropdown
-      <i class="fa fa-caret-down"></i>
+    <button id="dropdown" style="width:170px;"class="dropbtn">
+      <i style="font-size:32px;"class="fa-solid fa-bars"></i>
     </button>
     <div id="dropdowns" class="dropdown-content">
       <%= link_to "Our Company", our_company_path %>
@@ -234,6 +131,7 @@ function myFunction() {
   </div>
 </div>
 
+
 <script>
 
   // const html = document.documentElement;
@@ -243,7 +141,7 @@ function myFunction() {
     // add class to the menu to make it show
     const menu = document.querySelector(".dropdown-content")
     menu.style.display = "block"
-    menu.style.position = "fixed"
+    menu.style.position = "absolute"
     // add event listener to the html element
     document.documentElement.addEventListener('click', closeMenuOnBodyClick);
   }

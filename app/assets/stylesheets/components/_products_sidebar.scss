@@ -11,9 +11,9 @@
 @media screen and (max-width: 800px) {
   .product-sidebar-container {
     height: 30px;
+    margin-top: 65px;
+    position: sticky!important;
     top: 0px;
-    position: sticky;
-    margin-top: 70px;
     background-color: white;
     overflow: visible;
 
@@ -117,7 +117,7 @@
   .solutions-by-market-mobile:after {
     content: "";
     display: block;
-    background-image: url("arrow.svg");
+    background-image: url("chevron-down-solid.svg");
     background-repeat: no-repeat;
     background-color: white;
     height: 32px;
