@@ -5,13 +5,12 @@
 }
 
 .media-center-header {
-  width: 80%;
-  margin-left: 200px;
   color: #00687c;
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 400;
   font-family: "Roboto";
   margin-bottom: 70px;
+  overflow: hidden;
 }
 
 .media-main-header {
@@ -130,5 +129,20 @@
     margin-bottom: 50px;
     text-align: center;
     width: 100%;
+    overflow: hidden;
+  }
+}
+
+.button-media {
+  background-color: #00687c;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  &:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid #00687c;
   }
 }
