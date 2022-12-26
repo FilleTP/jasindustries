@@ -28,5 +28,10 @@
       <li class="footer-text">JAS Global Industries Privacy & Cookie Policy <br>Terms & Conditions</li>
     </ul>
   </div>
+  <div>
   <p>© JAS Global Industries <%= Date.today.year %></p>
+  <% if current_user %>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "button-media"  %>
+  <% end %>
+  </div>
 </div>

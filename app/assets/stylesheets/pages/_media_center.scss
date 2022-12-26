@@ -146,3 +146,15 @@
     border: 1px solid #00687c;
   }
 }
+
+.new-post {
+  text-align: end;
+  margin-top: 28px;
+  margin-right: 28px;
+}
+
+@media screen and (max-width: 1000px) {
+  .new-post {
+    text-align: center;
+  }
+}
