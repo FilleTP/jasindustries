@@ -138,7 +138,7 @@
     <div class="border-divider" style="margin-bottom:50px;"></div>
     <div class="request-information-container">
       <h2 class="product-solutions-header-bottom">Request Product Documentation</h2>
-      <% Product.all.each do |product| %>
+      <% @products.each do |product| %>
         <div data-controller="modal_reveal">
           <div class="product-download-section">
             <p class="product-title-download"><%= product.name %></p>
