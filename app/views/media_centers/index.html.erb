@@ -8,9 +8,14 @@
     <% end %>
     </div>
   </div>
-
+   <% if current_user %>
+      <div class="new-post">
+        <%= link_to "New Post", new_media_center_path, class: "button-media" %>
+      </div>
+    <% end %>
 <div class="media-center-container">
   <h1 class="media-main-header">Media Center</h1>
+
     <div class="cards-container-media">
       <div class="cards-div-media">
         <% @media_centers.each do |media_center| %>

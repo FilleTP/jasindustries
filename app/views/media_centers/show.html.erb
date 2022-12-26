@@ -11,10 +11,12 @@
 
 <div class="media-center-container">
   <div class="media-center-show-div">
-    <div style="text-align:center;margin-bottom:20px;">
-      <%= link_to "Update", edit_media_center_path(@media_center), class: "button-media" %>
-      <%= link_to "Delete", media_center_path(@media_center), method: :delete, data: { confirm: "Are you sure?" }, class: "button-media" %>
-    </div>
+    <% if current_user %>
+      <div style="text-align:center;margin-bottom:20px;">
+        <%= link_to "Update", edit_media_center_path(@media_center), class: "button-media" %>
+        <%= link_to "Delete", media_center_path(@media_center), method: :delete, data: { confirm: "Are you sure?" }, class: "button-media" %>
+      </div>
+    <% end %>
     <div class="trix-content">
       <h2 class="media-center-header"><%= @media_center.title %></h2>
       <%= @media_center.content %>
