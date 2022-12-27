@@ -129,6 +129,7 @@
   border-radius: 12px;
   position: relative;
   align-self: center;
+  z-index: -1;
 }
 
 
@@ -150,6 +151,12 @@
   max-height: 100vh;
 }
 
+@media screen and (max-width: 1100px) {
+  .product-lead-form-div {
+    width: 600px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .product-lead-form-div {
     margin-top: 0px;
@@ -163,11 +170,16 @@
   }
 }
 
+
 @media screen and (max-width: 1100px) {
-  .product-lead-form-div {
-    width: 600px;
+  .product-solutions-list-div {
+    flex-direction: column;
+  }
+  .product-solutions-list-div ul {
+    padding-left: 0px;
   }
 }
+
 
 .ul-bullet-points {
   padding-left: 14px;
