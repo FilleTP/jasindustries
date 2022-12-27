@@ -1,11 +1,49 @@
 #diagram-div {
-  background-color: rgba(247, 247, 247, 255);
+  // background-color: white;
   width: 100vw;
   height: 600px;
-  background-image: url("diagram.jpeg");
+  background-image: url("diagram.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  border-bottom: 0px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  #diagram-div {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #diagram-div {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #diagram-div {
+    margin-top: -40px;
+    margin-bottom: -70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #diagram-div {
+    margin-top: -66px;
+    margin-bottom: -91px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #diagram-div {
+    margin-top: -136px;
+    margin-bottom: -168px;
+  }
 }
 
 .wrapper {
