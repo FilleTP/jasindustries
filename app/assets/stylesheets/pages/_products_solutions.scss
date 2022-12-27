@@ -1,8 +1,7 @@
 .product-solutions-container {
-  width: 80%;
   // margin: 0 auto;
-  display: flex;
   padding-top: 100px;
+  padding-right: 100px;
   h3 {
     font-family: "Roboto";
     font-size:large;
@@ -15,6 +14,8 @@
     display: block;
     margin: 0 auto;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -38,6 +39,7 @@
   font-weight: bolder;
   color: #00687c;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .subheader-products {
@@ -95,8 +97,10 @@
 
 
 .product-download-section {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 20% 50% 20%;
+  border-bottom: 1px solid #e2e2e2;
+  margin-top: 1rem;
 }
 
 .product-title-download {
@@ -121,9 +125,10 @@
   background-color: #e6e6e6;
   padding: 4px 8px;
   height: fit-content;
-  width: fit-content;
+  width: 190px;
   border-radius: 12px;
   position: relative;
+  align-self: center;
 }
 
 
@@ -182,12 +187,26 @@
 }
 
 .request-information-container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
   .request-information-container {
     width: 100%;
+  }
+}
+
+.category-market-div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .product-download-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
   }
 }

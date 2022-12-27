@@ -136,54 +136,8 @@
       <li>Granular Calcium Hypochlorite</li>
     </ul>
     <div class="border-divider" style="margin-bottom:50px;"></div>
-    <div class="request-information-container">
-      <h2 class="product-solutions-header-bottom">Request Product Documentation</h2>
-      <% @products.each do |product| %>
-        <div data-controller="modal_reveal">
-          <div class="product-download-section">
-            <p class="product-title-download"><%= product.name %></p>
-            <div>
-              <p><strong>Category:</strong> <%=  product.category.name%></p>
-              <p><strong>Market:</strong> <%=  product.market.name%></p>
-            </div>
-            <button class="download-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Request Documentation</button>
-          </div>
-          <div data-modal_reveal-target="window" class="d-none product-lead-form-div">
-            <%= simple_form_for @product_lead, url: products_water_treatment_path, method: :post, data: { turbo: false } do |f| %>
-              <div class="close-button-div">
-                <h3 class="form-header">Request Documentation</h3>
-                <button class="close-form-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Close</button>
-              </div>
-              <div>
-                <%=  f.association :product, collection: @products, required: true, label: false, selected: product.id %>
-              </div>
-              <div class="contact-form-bottom">
-                <div class="contact-form-left">
-                  <%=  f.input :first_name, input_html: { class: "contact-input" }, required: true %>
-                  <%=  f.input :email, input_html: { class: "contact-input" }, required: true %>
-                  <%=  f.input :city, label: "City (optional)", input_html: { class: "contact-input" }%>
-                </div>
-                <div class="contact-form-right">
-                  <%=  f.input :last_name, input_html: { class: "contact-input" }, required: true %>
-                  <%=  f.input :phone_number, label: "Phone number", input_html: { class: "contact-input" } %>
-                  <%=  f.input :company, input_html: { class: "contact-input" }, required: true %>
-                </div>
-              </div>
-                <%=  f.country_select :country, { include_blank: 'Select a country' } ,required: true %>
-              <div>
-              </div>
-              <p class="terms-contact-form">The personal data contained in this form is intended for the sole use of JAS Global Industries. We will use this data to respond to your request or obtain additional information from you as needed, as the case may be. You have the right to access, correct and request the deletion, restriction or portability of your personal data as applicable, or object to its processing, by sending an electronic mail to privacy@jasind.com. For more information, please visit our ‘JAS Global Industries Data Protection and Privacy Policy’ available at: Privacy policy</p>
-              <div class="submit-box">
-                <div class="terms-div">
-                  <%=f.check_box :terms_and_conditions, required: true %>
-                  <p>I hereby agree to the storage and the use of my personal data by JAS Global Industries to answer to the inquiry above.</p>
-                </div>
-                <%= f.submit "Submit", id: "submit-button" %>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-    </div>
+    <%= render "download_section" %>
+
+
   </div>
 </div>
