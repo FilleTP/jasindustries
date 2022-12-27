@@ -21,10 +21,10 @@ require("@rails/actiontext")
 
 
 // document.addEventListener('turbo:load', () => {
-//   if (location.pathname == "/producs") {
+//   if (location.pathname == "/products") {
 //     scrolling()
 //   }
-
+//   scrolling();
 // })
 // const scrolling = () => {
 //   window.onscroll = function () {
