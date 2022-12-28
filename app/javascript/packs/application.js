@@ -11,13 +11,20 @@ require('jquery')
 import "bootstrap"
 import "../controllers"
 import "../trix-editor-overrides"
-
+import { navResponsive } from "../nav.js"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
 require("trix")
 require("@rails/actiontext")
+
+
+document.addEventListener('turbolinks:load', () => {
+  navResponsive();
+
+})
+
 
 
 // document.addEventListener('turbo:load', () => {

@@ -1,182 +1,25 @@
-
-
-<style>
-    height: 138px;
-    width: 120px;
-    position: fixed;
-    left: 200px;
-    z-index: 91;
-    background-color: #f1f2f2;
-    top: 22px;
-</style>
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <div class="container-fluid">
-  <div class="logo-link-div">
-    <%= link_to root_path, class: "navbar-brand" do %>
+<%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo.png" %>
     <% end %>
-  </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<div class="navbar">
+
+  <%= link_to "Our Company", our_company_path, class: "links-hide" %>
+  <%= link_to "Product & Solutions", products_path, class: "links-hide" %>
+  <%= link_to "Media Center", media_centers_path, class: "links-hide" %>
+  <%= link_to "JAS Cares", jas_cares_path, class: "links-hide" %>
+  <%= link_to "Contact Us", contact_path, class: "links-hide" %>
+  <%= link_to "Locations", locations_path, class: "links-hide" %>
+  <div class="dropdown">
+    <button id="dropdown" style="width:170px;"class="dropbtn">
+      <i style="font-size:32px;"class="fa-solid fa-bars"></i>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <%# if user_signed_in? %>
-           <li class="nav-item active">
-              <%= link_to "Our Company", our_company_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Product & Solutions", products_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Media Center", media_centers_path, class: "nav-link" %>
-            </li>
-          <%# </div> %>
-          <%# <div class="nav-items-bottom"> %>
-            <li class="nav-item active">
-              <%= link_to "JAS Cares", jas_cares_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Contact Us", contact_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Locations", locations_path, class: "nav-link" %>
-            </li>
-          <%# <li class="nav-item dropdown dropdown-responsive"> %>
-            <%# <%= image_tag "", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
-            </div>
-          <%# </li> %>
-        <%# else %>
-          <!--li class="nav-item"-->
-            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
-          <!--/li-->
-        <%# end %>
-      </ul>
+    <div id="dropdowns" class="dropdown-content">
+      <%= link_to "Our Company", our_company_path %>
+      <%= link_to "Product & Solutions", products_path %>
+      <%= link_to "Media Center", media_centers_path %>
+      <%= link_to "JAS Cares", jas_cares_path %>
+      <%= link_to "Contact Us", contact_path %>
+      <%= link_to "Locations", locations_path %>
     </div>
   </div>
 </div>
-<div class="row" id="diagram-div">
-  <div class="wrapper">
-    <div class="cell" id="cell-1">
-      <h2>Over two decades<br>of experience</h2>
-    </div>
-    <div class="cell" id="cell-2">
-      <h2>X patent<br>families</h2>
-    </div>
-    <div class="cell" id="cell-3">
-      <h2>X grantet<br>patents</h2>
-    </div>
-    <div class="cell" id="cell-4">
-      <h2>X technical support<br>engineers at your request</h2>
-    </div>
-    <div class="cell" id="cell-5">
-      <h2>25% of annual revenue<br>reinvested into<br>Research & Development</h2>
-    </div>
-    <div class="cell" id="cell-6">
-      <h2>5 Research &<br>Development<br>centres<br>worldwide</h2>
-    </div>
-    <div class="cell" id="cell-7">
-      <h2>X <br>manufacturing<br>plants<br>worldwide</h2>
-    </div>
-    <div class="cell" id="cell-8">
-      <h2>X strategic<br>locations<br>worldwide</h2>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-  <style>
-    @media screen and (max-width: 800px) {
-      .product-sidebar-container {
-        height: 30px;
-        top: 0px!important;
-        position: sticky;
-        background-color: white;
-      }
-    }
-  </style>
-
-  <div class="product-sidebar-container" style="top:300px;"data-controller="sidebar">
-    <p class="solutions-by-market-desktop"><strong>Solutions by Market</strong></p>
-    <p class="solutions-by-market-mobile" data-action="click->sidebar#mobileToggle"><strong>Search Solutions by Market</strong></p>
-    <div class="sidebar-mobile" data-sidebar-target="mobileSidebar">
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Water Treatment</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Thermal Desalination", products_water_treatment_path(anchor: "thermal_desalination") %>
-      <%= link_to "Reverse Osmosis", products_water_treatment_path(anchor: "reverse_osmosis") %>
-      <%= link_to "Wastewater Treatment", products_water_treatment_path(anchor: "wastewater_treatment") %>
-      <%= link_to "Steam Boilers", products_water_treatment_path(anchor: "steam_boilers") %>
-      <%= link_to "Cooling Systems", products_water_treatment_path(anchor: "cooling_systems") %>
-      <%= link_to "Ion Exchange", products_water_treatment_path(anchor: "ion_exchange") %>
-      <%= link_to "Swimming Pools & Disinfection", products_water_treatment_path(anchor: "swimming_pools_and_disinfection") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Mining</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Mining General", products_mining_path(anchor: "mining_general") %>
-      <%= link_to "Phosphate", products_mining_path(anchor: "phosphate") %>
-      <%= link_to "Phosphoric Acid", products_mining_path(anchor: "phosphoric_acid") %>
-      <%= link_to "Alumina Mining", products_mining_path(anchor: "alumina_mining") %>
-      <%= link_to "Mineral Processing", products_mining_path(anchor: "mineral_processing") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Fertilizers</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Fertilizers General", products_fertilizers_path(anchor: "fertilizers_general") %>
-      <%= link_to "Coloring Agents", products_fertilizers_path(anchor: "coloring_agents") %>
-      <%= link_to "Dust Management", products_fertilizers_path(anchor: "dust_management") %>
-      <%= link_to "Anti Caking", products_fertilizers_path(anchor: "anti_caking") %>
-      <%= link_to "Potash", products_fertilizers_path(anchor: "potash") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Oil & Gas</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Oil & Gas General", products_oil_and_gas_path(anchor: "oil_and_gas_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Fireside Treatment</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Fireside Treatment General", products_fireside_treatment_path(anchor: "fireside_treatment_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Construction</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Construction General", products_construction_path(anchor: "construction_general") %>
-      <%= link_to "Paint & Coating", products_construction_path(anchor: "paint_and_coating") %>
-      <%= link_to "Ceramics", products_construction_path(anchor: "ceramics") %>
-      <%= link_to "Concrete", products_construction_path(anchor: "concrete") %>
-      <%= link_to "Cement", products_construction_path(anchor: "cement") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">HomeCare</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "HomeCare General", products_home_care_path(anchor: "home_care_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">PersonalCare</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "PersonalCare General", products_personal_care_path(anchor: "personal_care_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Paper & Pulp</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Paper & Pulp General", products_paper_and_pulp_path(anchor: "paper_and_pulp_general") %>
-    </div>
-    <p class="sidebar-header" data-action="click->sidebar#toggle">Textile & Leather</p>
-    <hr class="sidebar-border">
-    <div class="subcategory-sidebar-div d-none">
-      <%= link_to "Textile & Leather General", products_textile_and_leather_path(anchor: "textile_and_leather_general") %>
-    </div>
-    </div>
-  </div>
-<div>
