@@ -8,6 +8,21 @@
   background-color: white;
 }
 
+.scroll-sidebar {
+  top: auto!important;
+  bottom: 200px!important;
+}
+
+.scroll-sidebar-down {
+  top: auto !important;
+  bottom: 200px !important;
+}
+
+.scroll-sidebar-up {
+  top: 205px!important;
+  bottom: auto!important;
+}
+
 @media screen and (max-width: 800px) {
   .product-sidebar-container {
     height: 30px;
