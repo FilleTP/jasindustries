@@ -12,6 +12,7 @@ import "bootstrap"
 import "../controllers"
 import "../trix-editor-overrides"
 import { navResponsive } from "../nav.js"
+import { scrolling } from "../scroll-sidebar.js"
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
@@ -22,32 +23,5 @@ require("@rails/actiontext")
 
 document.addEventListener('turbolinks:load', () => {
   navResponsive();
-
+  scrolling();
 })
-
-
-
-// document.addEventListener('turbo:load', () => {
-//   if (location.pathname == "/products") {
-//     scrolling()
-//   }
-//   scrolling();
-// })
-// const scrolling = () => {
-//   window.onscroll = function () {
-//     const windowHeight = window.innerHeight
-//     const sidebar = document.querySelector(".product-sidebar-container");
-//     console.log(document.body.scrollHeight - windowHeight - 200)
-//     if (scrollY > document.body.scrollHeight - windowHeight - 200) {
-//       const sideposition = document.body.scrollHeight - 600;
-//       sidebar.style.position = "absolute";
-//       // sidebar.style.top = `${sideposition}px`;
-//     } else if (scrollY < document.body.scrollHeight - windowHeight - 200) {
-//       sidebar.style.position = "fixed";
-//       sidebar.style.top = "300px";
-//       // sidebar.style.bottom = "0px";
-//     }
-
-
-//   }
-// }
