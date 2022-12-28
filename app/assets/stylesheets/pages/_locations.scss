@@ -65,3 +65,24 @@
   right: 23px;
   bottom: 20px;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .row {
+    display: flex;
+
+  }
+
+  .row h2:after {
+    width: 15%;
+  }
+  .country-info-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .country-info {
+    margin-left: 20px;
+  }
+}

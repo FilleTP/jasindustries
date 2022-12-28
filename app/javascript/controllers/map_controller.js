@@ -13,11 +13,17 @@ export default class extends Controller {
       container: this.element,
       projection: 'mercator',
       style: "mapbox://styles/filiptillbergpersson/clbq9fl5k000d14r42ijpfpi7",
-      dragPan: false
+      dragPan: true,
+      cooperativeGestures: true
     })
     this.#addMarkersToMap()
     this.#fitMapToMarkers()
+    // if (window.screen.availWidth > 800) {
+    //   this.map.scrollZoom.disable();
+    // }
     this.map.scrollZoom.disable();
+    this.map.addControl(new mapboxgl.NavigationControl());
+
     this.map.setZoom(2.3)
 
   }
