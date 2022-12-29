@@ -119,42 +119,27 @@
   </div>
 </div>
 
-
 <div class="row" id="diagram-div">
 </div>
 
-
-
-<div class="jas-cares-div">
-  <div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+<%= link_to jas_cares_path do %>
+  <div class="jas-cares-div">
+    <div id="jas-cares" style="background-image: url('<%=image_url('jas-cares-banner.jpg')%>');">
+    </div>
   </div>
-</div>
+<% end %>
 
 <div class="cards-container">
   <div class="cards-div">
+  <% @media_centers.each do |media_center| %>
     <div class="card">
-      <div class="card-image" style="background-image: url('<%=image_url('products/textile-and-leather.jpg')%>');">
+      <div class="card-image" style="background-image: url('<%= cl_image_path(media_center.photo.key, crop: :fill)%>');">
       </div>
       <div class="card-bottom">
-        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
-        <a class="button-card" href="">read more...</a>
+        <h3 class="card-bottom-h3"><%= media_center.title %></h3>
+        <%= link_to "read more...", media_center_path(media_center), class: "button-card" %>
       </div>
     </div>
-    <div class="card">
-      <div class="card-image" style="background-image: url('<%=image_url('products/textile-and-leather.jpg')%>');">
-      </div>
-      <div class="card-bottom">
-        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
-        <a class="button-card" href="">read more...</a>
-      </div>
-    </div>
-    <div class="card">
-      <div  class="card-image" style="background-image: url('<%=image_url('products/textile-and-leather.jpg')%>');">
-      </div>
-      <div class="card-bottom">
-        <h3>Lorem Ipsum Dolor Sit Amet Adpiscing Elit</h2>
-        <a class="button-card" href="">read more...</a>
-      </div>
-    </div>
+  <% end %>
   </div>
 </div>

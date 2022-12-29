@@ -1,18 +1,5 @@
-
-  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
-
-
-   <div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
-    <p class="media-solutions-by-market-desktop"><strong>Posts</strong></p>
-    <p class="media-solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong> <i class="fas fa-search"></i></p>
-    <div class="media-sidebar-mobile" data-media_sidebar-target="mobileSidebar">
-    <%  @media_centers.each do |media_center| %>
-    <%= link_to media_center.title, media_center_path(media_center), class: "media-sidebar-header" %>
-    <hr class="sidebar-border">
-    <% end %>
-    </div>
-  </div>
-
+<link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+<%= render "sidebar" %>
 <div class="media-center-container">
   <div class="media-center-show-div">
     <% if current_user %>
@@ -26,6 +13,6 @@
       <%= @media_center.content %>
     </div>
   </div>
-
 </div>
-  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
