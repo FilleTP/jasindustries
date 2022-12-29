@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    @media_centers = MediaCenter.last(3)
   end
 
   def locations
