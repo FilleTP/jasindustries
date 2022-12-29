@@ -17,3 +17,16 @@
 body {
   background-color: white;
 }
+
+
+.blob-video {
+  height: 360px!important;
+  width: 640px!important;
+}
+@media screen and  (max-width: 600px) {
+  .blob-video {
+    width: 83vw!important;
+    height: 360px !important;
+  }
+
+}

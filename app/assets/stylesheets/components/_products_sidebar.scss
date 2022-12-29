@@ -9,7 +9,6 @@
 }
 
 .product-sidebar-container.scroll-sidebar-up {
-  top: auto!important;
   bottom: 200px!important;
 }
 
@@ -18,10 +17,10 @@
   bottom: 200px !important;
 }
 
-.scroll-sidebar-up {
-  top: 205px!important;
-  bottom: auto!important;
-}
+// .scroll-sidebar-up {
+//   top: 205px!important;
+//   bottom: auto!important;
+// }
 
 @media screen and (max-width: 800px) {
   .product-sidebar-container {
@@ -29,6 +28,7 @@
     margin-top: 65px;
     position: sticky!important;
     top: 0px;
+    left: 0px;
     background-color: white;
     overflow: visible;
     z-index: 1;
@@ -116,36 +116,64 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 600px) {
+  .solutions-by-market-mobile {
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 800px) {
   .solutions-by-market-mobile {
     display: block;
-    background-color: #00687c;
-    color: white;
+    background-color: white;
+    color: #00687c;
     font-family: "Roboto";
     font-weight: bold;
     padding: 4px 8px;
     cursor: pointer;
-    margin: 0px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .solutions-by-market-mobile:after {
-    content: "";
-    display: block;
-    background-image: url("chevron-down-solid.svg");
-    background-repeat: no-repeat;
-    background-color: white;
-    height: 32px;
-    width: 26px;
-    position: absolute;
-    right: -28px;
-    top: 0px;
-    box-shadow: -2px 0px 0px 0px white, 2px 0px 0px 0px white;
-    // border: 1px solid #00687c;
+    margin-bottom: 0px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-size: medium;
 
   }
 }
+
+// @media screen and (max-width: 1000px) {
+//   .media-solutions-by-market-mobile {
+//     display: block;
+//     background-color: white;
+//     color: #00687c;
+//     font-family: "Roboto";
+//     font-weight: bold;
+//     padding: 4px 8px;
+//     cursor: pointer;
+//     margin-bottom: 0px;
+//     border-right: 1px solid;
+//     border-bottom: 1px solid;
+//     text-align: center;
+//     font-size: medium;
+//   }
+// }
+
+// @media screen and (max-width: 800px) {
+//   .solutions-by-market-mobile:after {
+//     content: "";
+//     display: block;
+//     background-image: url("chevron-down-solid.svg");
+//     background-repeat: no-repeat;
+//     background-color: white;
+//     height: 32px;
+//     width: 26px;
+//     position: absolute;
+//     right: -28px;
+//     top: 0px;
+//     box-shadow: -2px 0px 0px 0px white, 2px 0px 0px 0px white;
+//     // border: 1px solid #00687c;
+
+//   }
+// }
 
 @media screen and (min-width: 800px) {
   .sidebar-mobile {
