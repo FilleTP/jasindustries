@@ -14,6 +14,7 @@ module Jasindustries
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 

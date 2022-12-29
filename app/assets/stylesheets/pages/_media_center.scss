@@ -11,6 +11,8 @@
   font-family: "Roboto";
   margin-bottom: 70px;
   overflow: hidden;
+  margin-top: 50px;
+  text-align: center;
 }
 
 .media-main-header {
@@ -120,11 +122,20 @@
 @media screen and (max-width: 1000px) {
   .media-center-show-div {
     margin: 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .media-center-container {
+    width: 100%;
   }
 }
 
+
+
 @media screen and (max-width: 1000px) {
   .media-center-header {
+    font-size: 24px;
     margin: 0 auto;
     margin-bottom: 50px;
     text-align: center;

@@ -1,6 +1,10 @@
-<div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
-    <p class="solutions-by-market-desktop"><strong>Posts</strong></p>
-    <p class="solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong></p>
+
+  <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+
+
+   <div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
+    <p class="media-solutions-by-market-desktop"><strong>Posts</strong></p>
+    <p class="media-solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong> <i class="fas fa-search"></i></p>
     <div class="media-sidebar-mobile" data-media_sidebar-target="mobileSidebar">
     <%  @media_centers.each do |media_center| %>
     <%= link_to media_center.title, media_center_path(media_center), class: "media-sidebar-header" %>
@@ -17,10 +21,11 @@
         <%= link_to "Delete", media_center_path(@media_center), method: :delete, data: { confirm: "Are you sure?" }, class: "button-media" %>
       </div>
     <% end %>
-    <div class="trix-content">
+    <div class="trix-content" style="text-align:center;">
       <h2 class="media-center-header"><%= @media_center.title %></h2>
       <%= @media_center.content %>
     </div>
   </div>
 
 </div>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>

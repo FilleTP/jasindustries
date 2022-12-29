@@ -10,13 +10,15 @@
 // images in galleries will be squished by the max-width: 33%; rule.
 
 .trix-content {
+  padding-left: 15px;
+  padding-right: 15px;
   .attachment-gallery {
     > action-text-attachment,
     > .attachment {
       flex: 1 0 33%;
       padding: 0 0.5em;
       max-width: 33%;
-      z-index: -1;
+      // z-index: -1;
     }
 
     &.attachment-gallery--2,
@@ -25,7 +27,7 @@
       > .attachment {
         flex-basis: 50%;
         max-width: 50%;
-        z-index: -1;
+        // z-index: -1;
       }
     }
   }
@@ -35,7 +37,7 @@
       padding: 0 !important;
       max-width: 100% !important;
       text-align: center;
-      z-index: -1;
+      // z-index: -1;
     }
   }
 }
