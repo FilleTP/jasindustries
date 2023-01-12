@@ -1,1 +1,53 @@
 <h3 class="map-h2"><%= country.address %></h3>
+<% if country.location_two? %>
+  <div class="info-window-div-grid">
+<% else %>
+  <div class="info-window-div">
+<% end %>
+  <div>
+    <% if country.location? %>
+      <p>Location: <%= country.location %></p>
+    <% end %>
+    <% if country.po_box? %>
+      <p>PO: <%= country.po_box %></p>
+    <% end %>
+    <% if  country.postal_code? %>
+      <p>Postal Code: <%= country.postal_code %></p>
+    <% end %>
+    <% if country.city? %>
+      <p>City: <%= country.city %></p>
+    <% end %>
+    <% if country.telephone?%>
+      <p>Phone: <%= country.telephone %></p>
+    <% end %>
+    <% if country.fax? %>
+    <p>Fax: <%= country.fax %></p>
+    <% end %>
+  </div>
+  <% if country.location_two %>
+    <div>
+      <p>Location: <%= country.location_two %></p>
+      <p>PO: <%= country.po_box_two %></p>
+      <p>Postal Code: <%= country.postal_code_two %></p>
+      <p>City: <%= country.city_two %></p>
+      <p>Phone: <%= country.telephone_two %></p>
+      <p>Fax: <%= country.fax_two %></p>
+    </div>
+    <div>
+      <p>Location: <%= country.location_three %></p>
+      <p>PO: <%= country.po_box_three %></p>
+      <p>Postal Code: <%= country.postal_code_three %></p>
+      <p>City: <%= country.city_three %></p>
+      <p>Phone: <%= country.telephone_three %></p>
+      <p>Fax: <%= country.fax_three %></p>
+    </div>
+    <div>
+      <p>Location: <%= country.location_four %></p>
+      <p>PO: <%= country.po_box_four %></p>
+      <p>Postal Code: <%= country.postal_code_four %></p>
+      <p>City: <%= country.city_four %></p>
+      <p>Phone: <%= country.telephone_four %></p>
+      <p>Fax: <%= country.fax_four %></p>
+    </div>
+  <% end %>
+</div>

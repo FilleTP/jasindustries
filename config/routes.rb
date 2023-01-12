@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   # get "water-treatment", to: "pages#water_treatment"
 
-  get "products", to: "products#index"
+  # get "products", to: "products#index"
   get "products/water-treatment", to: "products#water_treatment"
   post "products/water-treatment", to: "products#create"
   get "products/mining", to: "products#mining"

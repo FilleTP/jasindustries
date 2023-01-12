@@ -30,22 +30,22 @@ export default class extends Controller {
 
   #addMarkersToMap() {
     this.markersValue.forEach((marker) => {
-      // const popup = new mapboxgl.Popup().setHTML(marker.info_window)
-      const customMarker = document.createElement("div")
-      customMarker.className = "marker"
-      console.log(marker.name)
-      customMarker.innerText = `${marker.name}`
-      customMarker.style.backgroundSize = "contain"
-      customMarker.style.width = "30px"
-      customMarker.style.height = "30px"
-      customMarker.style.backgroundRepeat = "no-repeat"
-      customMarker.style.color = "white"
-      customMarker.style.fontWeight = "bold"
-      customMarker.style.fontFamily = "Roboto"
+      const popup = new mapboxgl.Popup().setHTML(marker.info_window)
+      // const customMarker = document.createElement("div")
+      // customMarker.className = "marker"
+      // console.log(marker.name)
+      // customMarker.innerText = `${marker.name}`
+      // customMarker.style.backgroundSize = "contain"
+      // customMarker.style.width = "30px"
+      // customMarker.style.height = "30px"
+      // customMarker.style.backgroundRepeat = "no-repeat"
+      // customMarker.style.color = "white"
+      // customMarker.style.fontWeight = "bold"
+      // customMarker.style.fontFamily = "Roboto"
 
-      new mapboxgl.Marker(customMarker)
+      new mapboxgl.Marker(marker)
         .setLngLat([marker.lng, marker.lat])
-        // .setPopup(popup)
+        .setPopup(popup)
         .addTo(this.map)
 
     })

@@ -7,10 +7,25 @@
   padding-bottom: 0px!important;
 }
 
+.info-window-div {
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.info-window-div-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
 .marker:before {
   content: "";
   display: block;
-  background-image: url("marker.png");
+  background-image: url("mapmarker.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   height: 30px;

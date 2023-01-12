@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_26_141834) do
+ActiveRecord::Schema.define(version: 2023_01_12_134927) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,30 @@ ActiveRecord::Schema.define(version: 2022_12_26_141834) do
     t.float "latitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "location"
+    t.string "po_box"
+    t.string "telephone"
+    t.string "fax"
+    t.string "location_two"
+    t.string "po_box_two"
+    t.string "telephone_two"
+    t.string "fax_two"
+    t.string "location_three"
+    t.string "po_box_three"
+    t.string "telephone_three"
+    t.string "fax_three"
+    t.string "location_four"
+    t.string "po_box_four"
+    t.string "telephone_four"
+    t.string "fax_four"
+    t.string "city"
+    t.string "postal_code"
+    t.string "city_two"
+    t.string "postal_code_two"
+    t.string "city_three"
+    t.string "postal_code_three"
+    t.string "city_four"
+    t.string "postal_code_four"
   end
 
   create_table "leads", force: :cascade do |t|
