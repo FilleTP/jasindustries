@@ -1,7 +1,7 @@
   /* Navbar container */
   .navbar {
     /* overflow: hidden; */
-    background-color: #f1f2f2;
+    background-color: #ffffff;
     font-family: "Roboto";
     height: 100px;
     justify-content: end;
@@ -111,15 +111,15 @@
   }
 
   .navbar-brand img {
-    height: 170px;
-    width: 140px;
+    height: 100px;
+    width: 93px;
     position: absolute;
     left: 200px;
     z-index: 1;
     background-color: white;
     top: 0px;
     padding: 20px 10px 10px 10px;
-    box-shadow: 3px 0px 5px rgb(128, 128, 128);
+    // box-shadow: 3px 0px 5px rgb(128, 128, 128);
   }
 
   @media screen and (max-width: 1100px) {
@@ -130,7 +130,7 @@
 
   @media screen and (max-width: 700px) {
     .navbar-brand img {
-      height: 120px;
-      width: 100px;
+      height: 100px;
+      width: 93px;
     }
   }

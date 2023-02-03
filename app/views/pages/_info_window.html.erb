@@ -6,7 +6,7 @@
 <% end %>
   <div>
     <% if country.location? %>
-      <p>Location: <%= country.location %></p>
+      <p><strong>Location: <%= country.location %></strong></p>
     <% end %>
     <% if country.po_box? %>
       <p>PO: <%= country.po_box %></p>
@@ -26,7 +26,7 @@
   </div>
   <% if country.location_two %>
     <div>
-      <p>Location: <%= country.location_two %></p>
+      <p><strong>Location: <%= country.location_two %></strong></p>
       <p>PO: <%= country.po_box_two %></p>
       <p>Postal Code: <%= country.postal_code_two %></p>
       <p>City: <%= country.city_two %></p>
@@ -34,7 +34,7 @@
       <p>Fax: <%= country.fax_two %></p>
     </div>
     <div>
-      <p>Location: <%= country.location_three %></p>
+      <p><strong>Location: <%= country.location_three %></strong></p>
       <p>PO: <%= country.po_box_three %></p>
       <p>Postal Code: <%= country.postal_code_three %></p>
       <p>City: <%= country.city_three %></p>
@@ -42,7 +42,7 @@
       <p>Fax: <%= country.fax_three %></p>
     </div>
     <div>
-      <p>Location: <%= country.location_four %></p>
+      <p><strong>Location: <%= country.location_four %></strong></p>
       <p>PO: <%= country.po_box_four %></p>
       <p>Postal Code: <%= country.postal_code_four %></p>
       <p>City: <%= country.city_four %></p>
