@@ -10,7 +10,7 @@ class PagesController < ApplicationController
         lat: country.latitude,
         lng: country.longitude,
         info_window: render_to_string(partial: "info_window", locals: {country: country}),
-        image_url: helpers.asset_url("marker.png"),
+        image_url: helpers.asset_url("mapmarker.svg"),
         name: country.address
       }
     end

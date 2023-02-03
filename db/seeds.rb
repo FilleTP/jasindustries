@@ -295,15 +295,67 @@ Product.create!(name: "UltraFloc®", category: Category.find_by(name: "Paper & P
 puts "Products created"
 
 Country.create!(address: "Brazil")
-Country.create!(address: "Jordan")
+Country.create!(address: "Jordan",
+  location: "JAS Jordan, Office No. 111 Kenk Complex, Bldg No. 145, Macca Str. Amman",
+  po_box: "5660",
+  city: "Amman",
+  postal_code: "11953",
+  telephone: "+96265535841",
+  fax: "+96265535842")
 Country.create!(address: "Spain")
 Country.create!(address: "Egypt")
-Country.create!(address: "Morocco")
-Country.create!(address: "Saudi Arabia")
-Country.create!(address: "United Arab Emirates")
-Country.create!(address: "Indonesia")
-Country.create!(address: "China")
+Country.create!(address: "Morocco",
+  location: "JAS Morocco, 51 Rue okhouane, Hay Erraha Casablanca",
+  po_box: "20200",
+  telephone: "+2120522324243",
+  fax: "+2120522324290")
+Country.create!(address: "Saudi Arabia",
+  location: "JAS Jeddah HQ",
+  po_box: "22973",
+  city: "Jeddah",
+  postal_code: "21416",
+  telephone: "+966126081911",
+  fax: "+966126081912",
+
+  location_two: "JAS Riyadh",
+  po_box_two: "220765",
+  city_two: "Riyadh",
+  postal_code_two: "11311",
+  telephone_two: "+966112631183",
+  fax_two: "+966114506438",
+
+  location_three: "JAS Dammam",
+  po_box_three: "6955",
+  city_three: "Dammam",
+  postal_code_three: "31452",
+  telephone_three: "+966138341659",
+  fax_three: "+966138341695",
+
+  location_four: "Khamis Mushait",
+  po_box_four: "756041",
+  city_four: "Khamis Mushait",
+  postal_code_four: "7331",
+  telephone_four: "+966504700940",
+  fax_four: "+966172209099")
+Country.create!(address: "United Arab Emirates",
+  location: "Office No. 3403 JBC 1 Tower Cluster G",
+  po_box: "486220",
+  city: "Dubai - UAE",
+  telephone: "+97144424795",
+  fax: "+97144424632")
+Country.create!(address: "Indonesia",
+  location: "JAS Indonesia, Graha Bukopin Bldg. 12th Floor, JI. Panglima Sudirman Kav, 10-18 Surabaya",
+  telephone: "+623128997979",
+  fax: "+623128997901")
+Country.create!(address: "China",
+  location: "JAS China, Room 2314 R&F Building number 3-1, Huanqiang Road, Guangzhou, Guangdong Province",
+  telephone: "+862185503763",
+  fax: "+862038012400")
 Country.create!(address: "Hong Kong")
 Country.create!(address: "India")
+Country.create!(address: "Tunisia")
+Country.create!(address: "Oman")
+Country.create!(address: "Kuwait")
+Country.create!(address: "Pakistan")
 
 puts "Countries created"

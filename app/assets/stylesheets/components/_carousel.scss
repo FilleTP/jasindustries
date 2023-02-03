@@ -3,3 +3,35 @@
   width: 100vw;
   object-fit: cover;
 }
+
+.banner-text-div {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+}
+
+.banner-text {
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.banner-button {
+  color: #00687c;
+  border: 0px;
+  background-color: #e6e6e6;
+  padding: 4px 8px;
+  height: fit-content;
+  width: 190px;
+  border-radius: 12px;
+  position: relative;
+  align-self: center;
+   a &:hover {
+    background-color: white;
+    color: #00687c;
+   }
+}
+
+a:hover, a:focus, a:active {
+  color: inherit;
+}
