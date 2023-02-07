@@ -10,6 +10,30 @@
    }
 }
 
+.media-sidebar-header-button {
+  text-decoration: none;
+  font-family: "Roboto";
+  color: white;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+  background-color: #00687c;
+
+  &:hover {
+    font-weight: bold;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .media-sidebar-header-button {
+    display: none;
+  }
+}
 
 
 
