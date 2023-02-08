@@ -153,9 +153,11 @@
   text-decoration: none;
   margin-bottom: 20px;
   &:hover {
-    color: black;
-    background-color: white;
-    border: 1px solid #00687c;
+    // color: black;
+    // background-color: white;
+    // border: 1px solid #00687c;
+    font-weight: bolder;
+    color: white;
   }
 }
 
