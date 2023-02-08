@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 500px) {
   .jas-cares-banner {
-    height: 150px;
+    height: 184px;
     background-size: contain;
   }
 }
@@ -68,4 +68,16 @@
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.jas-cares-carousel-item {
+  object-fit: fill!important;
+  height: 67vh!important;
+  width: 65vw!important;
+}
+
+@media screen and (max-width: 600px) {
+  .jas-cares-carousel-item {
+      height: 33vh !important;
+  }
 }

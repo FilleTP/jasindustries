@@ -158,7 +158,7 @@
   <div class="cards-div">
   <% @media_centers.each do |media_center| %>
     <div class="card">
-      <div class="card-image" style="background-image: url('<%= cl_image_path(media_center.photo.key, crop: :fill)%>');">
+      <div class="card-image" style="background-image: url('<%= cl_image_path(media_center.photos.first.key, crop: :fill)%>');">
       </div>
       <div class="card-bottom">
         <h3 class="card-bottom-h3"><%= media_center.title %></h3>

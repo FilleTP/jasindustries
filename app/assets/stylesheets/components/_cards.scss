@@ -14,7 +14,7 @@
 
 .card {
   height: 350px;
-  width: auto;
+  min-width: 300px;
   border:0ch;
   background-color: white;
   box-shadow: 0px 5px 10px #d6d6d6
@@ -27,7 +27,7 @@
 }
 
 .card-bottom {
-  height: 100px;
+  height: 110px;
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -40,6 +40,18 @@
   // }
 }
 
+.card-bottom-media {
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  border: 1px solid rgb(196, 194, 194) // p {
+  //   font-family: "Roboto";
+  // }
+}
 
 
 .card h3 {

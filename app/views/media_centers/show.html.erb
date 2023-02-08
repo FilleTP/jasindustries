@@ -11,8 +11,41 @@
     <div class="trix-content" style="text-align:center;">
       <h2 class="media-center-header"><%= @media_center.title %></h2>
       <%= @media_center.content %>
+      <% if @media_center.photos.attached? && @media_center.photos.count > 1%>
+      <div style="display:flex;justify-content:center;">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <% count = 1 %>
+            <% @photos.each do |photo| %>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to=<%="#{count}"%> aria-label=<%="Slide #{count + 1}"%>></button>
+              <% count += 1 %>
+            <% end %>
+
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag @media_center.photos.first, class: "d-block jas-cares-carousel-item", alt: "" %>
+            </div>
+            <% @photos.each do |photo| %>
+              <div class="carousel-item">
+                <%= cl_image_tag(photo.key, crop: :fill, class: "d-block jas-cares-carousel-item", alt: "") %>
+              </div>
+            <% end %>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
-
 <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
