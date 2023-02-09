@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Contact Mail</h1>
+    <p><%= @lead.question %></p>
+    <p><%= @lead.first_name %></p>
+    <p><%= @lead.last_name %></p>
+    <p><%= @lead.email %></p>
+    <p><%= @lead.phone_number %></p>
+    <p><%= @lead.company %></p>
+    <p><%= @lead.department %></p>
+    <p><%= @lead.country %></p>
+    <p><%= @lead.city %></p>
+    <%= yield %>
+  </body>
+</html>

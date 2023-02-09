@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Request Product Info</h1>
+    <p><%= @product_lead.first_name %></p>
+    <p><%= @product_lead.last_name %></p>
+    <p><%= @product_lead.email %></p>
+    <p><%= @product_lead.phone_number %></p>
+    <p><%= @product_lead.company %></p>
+    <p><%= @product_lead.country %></p>
+    <p><%= @product_lead.city %></p>
+    <p><%= @product_lead.product.name %></p>
+    <%= yield %>
+  </body>
+</html>
