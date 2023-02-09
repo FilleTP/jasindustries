@@ -9,14 +9,22 @@
 
   <body>
     <h1>Request Product Info</h1>
-    <p><%= @product_lead.first_name %></p>
-    <p><%= @product_lead.last_name %></p>
-    <p><%= @product_lead.email %></p>
-    <p><%= @product_lead.phone_number %></p>
-    <p><%= @product_lead.company %></p>
-    <p><%= @product_lead.country %></p>
-    <p><%= @product_lead.city %></p>
-    <p><%= @product_lead.product.name %></p>
-    <%= yield %>
+    <div class="contaienr">
+      <div>
+        <p><strong>Documentation requested for:</strong> <%= @product_lead.product.name %></p>
+        <p>Market: <%= @product_lead.product.market.name %></p>
+        <p>Category: <%= @product_lead.product.category.name %></p>
+        <p style="margin-bottom:50px;">Subcategory: <%= @product_lead.product.subcategory.name %></p>
+        <p><strong>Contact Information:</strong></p>
+        <p>First Name: <%= @product_lead.first_name %></p>
+        <p>Last Name: <%= @product_lead.last_name %></p>
+        <p>Email: <%= @product_lead.email %></p>
+        <p>Phone Number: <%= @product_lead.phone_number %></p>
+        <p>Company: <%= @product_lead.company %></p>
+        <p>Country: <%= @product_lead.country %></p>
+        <p>City: <%= @product_lead.city %></p>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

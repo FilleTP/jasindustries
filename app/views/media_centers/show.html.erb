@@ -12,7 +12,7 @@
       <h2 class="media-center-header"><%= @media_center.title %></h2>
       <%= @media_center.content %>
       <% if @media_center.photos.attached? && @media_center.photos.count > 1%>
-      <div style="display:flex;justify-content:center;">
+      <div style="text-align:-webkit-center;">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
