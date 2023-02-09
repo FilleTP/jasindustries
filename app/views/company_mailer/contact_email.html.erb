@@ -8,16 +8,22 @@
   </head>
 
   <body>
-    <h1>Contact Mail</h1>
-    <p><%= @lead.question %></p>
-    <p><%= @lead.first_name %></p>
-    <p><%= @lead.last_name %></p>
-    <p><%= @lead.email %></p>
-    <p><%= @lead.phone_number %></p>
-    <p><%= @lead.company %></p>
-    <p><%= @lead.department %></p>
-    <p><%= @lead.country %></p>
-    <p><%= @lead.city %></p>
-    <%= yield %>
+    <h2>Contact Mail</h2>
+    <div class="container">
+      <div>
+        <p><strong>Market:</strong> <%= @lead.market %></p>
+        <p style="margin-bottom:50px;"><strong>Department:</strong> <%= @lead.department %></p>
+        <p><strong>Contact Information:</strong></p>
+        <p>Message: <%= @lead.question %></p>
+        <p>First Name: <%= @lead.first_name %></p>
+        <p>Last Name: <%= @lead.last_name %></p>
+        <p>Email: <%= @lead.email %></p>
+        <p>Phone Number: <%= @lead.phone_number %></p>
+        <p>Company: <%= @lead.company %></p>
+        <p>Country: <%= @lead.country %></p>
+        <p>City: <%= @lead.city %></p>
+      <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
