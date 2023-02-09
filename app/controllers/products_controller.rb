@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
     @product_lead = ProductLead.new(product_lead_params)
     @product_lead.product = Product.find(params[:product_lead][:product_id])
     if @product_lead.save
+      CompanyMailer.with(product_lead: @product_lead).request_information_email.deliver_later
       flash[:notice] = "Success"
       redirect_back(fallback_location: root_path)
     else
