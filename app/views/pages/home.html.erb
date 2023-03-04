@@ -53,15 +53,14 @@
   </button>
 </div>
 <div id="product-banner">
-  <h1>Find the right <strong>solutions</strong> for you needs</h1>
+  <h1 style="margin-bottom:20px;">Find the right <strong>solutions</strong> for you needs</h1>
   <div class="product-container" style="display:flex;justify-content:center;">
     <ul>
       <li>
         <%= link_to products_water_treatment_path do %>
           <div class="product-banner-div">
             <%= image_tag "1-WT.jpg", alt: "" %>
-            Water<br>
-            Treatment
+            Water Treatment
           </div>
         <% end %>
       </li>
@@ -91,10 +90,9 @@
       </li>
       <li>
         <%= link_to products_fireside_treatment_path do %>
-          <div class="product-banner-div">
+          <div class="product-banner-div" id="fireside-product-div">
             <%= image_tag "5-F.jpg", alt: "" %>
-            Fireside<br>
-            Treatment
+            Fireside Treatment
           </div>
         <% end %>
       </li>
@@ -126,8 +124,7 @@
         <%= link_to products_paper_and_pulp_path do %>
           <div class="product-banner-div">
             <%= image_tag "9-P&P.jpg", alt: "" %>
-            Paper<br>
-            & Pulp
+            Paper & Pulp
           </div>
         <% end %>
       </li>
@@ -135,8 +132,7 @@
         <%= link_to products_textile_and_leather_path do %>
           <div class="product-banner-div">
             <%= image_tag "10-T&L.jpg", alt: "" %>
-            Textile<br>
-            & Leather
+            Textile & Leather
           </div>
         <% end %>
       </li>
