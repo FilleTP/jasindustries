@@ -10,6 +10,13 @@
   left: 12%;
 }
 
+@media screen and (max-width: 600px) {
+  .banner-text-div {
+    left: 8%;
+  }
+
+}
+
 .banner-text {
   color: white;
   font-family: "Roboto";

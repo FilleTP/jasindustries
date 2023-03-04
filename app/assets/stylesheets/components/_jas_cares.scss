@@ -11,7 +11,7 @@
   width: 100vw;
 }
 #jas-cares {
- width: 70%;
+ width: 100%;
  min-height: 400px;
  background-size: contain;
  background-repeat: no-repeat;
@@ -28,11 +28,13 @@
 @media screen and (max-width: 700px) {
   #jas-cares {
     min-height: 200px;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (max-width: 500px) {
   #jas-cares {
     min-height: 150px;
+    margin-bottom: 50px;
   }
 }
