@@ -72,3 +72,4 @@ gem 'stimulus-rails'
 gem "devise"
 gem "geocoder"
 gem "letter_opener", group: :development
+gem "recaptcha"
