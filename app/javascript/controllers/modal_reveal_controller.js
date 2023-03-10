@@ -3,12 +3,6 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
   static targets = ["window", "button", "buttonClose", "submit"]
 
-  connect() {
-
-
-
-  }
-
   toggleModal(event) {
     if (document.querySelector(".active") && document.querySelector(".active") != this.windowTarget) {
       const activeWindow = document.querySelector(".active")

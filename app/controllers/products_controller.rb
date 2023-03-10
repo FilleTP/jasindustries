@@ -1,7 +1,5 @@
 class ProductsController < ApplicationController
-  # before_action :set_products, only: [:index, :water_treatment, :mining, :fertilizers, :oil_and_gas, :fireside_treatment, :construction, :home_care, :personal_care, :paper_and_pulp, :textile_and_leather]
   before_action :set_product_lead, only: %i[water_treatment mining fertilizers oil_and_gas fireside_treatment construction home_care personal_care paper_and_pulp textile_and_leather]
-
   def index
     @products = Product.all
   end
@@ -9,15 +7,16 @@ class ProductsController < ApplicationController
   def create
     @product_lead = ProductLead.new(product_lead_params)
     @product_lead.product = Product.find(params[:product_lead][:product_id])
-    if verify_recaptcha(model: @product_lead) && @product_lead.save
+    @product = @product_lead.product
+    if verify_recaptcha && @product_lead.save
       CompanyMailer.with(product_lead: @product_lead).request_information_email.deliver_later
-      flash[:notice] = 'Information requested successfully, we will get back to you shortly'
+      flash[:notice] = 'Thank you, we will get back to you shortly'
       redirect_back(fallback_location: root_path)
     else
-        @products = Product.all.select { |product| product.category.name == "Water Treatment"}
-        flash[:notice] = 'Please fill in all the fields'
-        render '/products/water_treatment'
-
+      respond_to do |format|
+        format.html { render partial: 'products/modal', locals: { errors: @product_lead.errors.full_messages, product_lead: @product_lead, product: @product }, status: :unprocessable_entity }
+        format.js
+      end
     end
   end
 
@@ -67,11 +66,8 @@ class ProductsController < ApplicationController
     params.require(:product_lead).permit(:first_name, :last_name, :email, :phone_number, :company, :country, :city, :terms_and_conditions, :product_id)
   end
 
-  # def set_products
-  #  @products = Product.all
-  # end
-
   def set_product_lead
     @product_lead = ProductLead.new
   end
+
 end
