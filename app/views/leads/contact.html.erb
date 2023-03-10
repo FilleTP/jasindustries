@@ -27,6 +27,7 @@
         <%=f.check_box :terms_and_conditions, required: true %>
         <p>I hereby agree to the storage and the use of my personal data by JAS Global Industries to answer to the inquiry above.</p>
       </div>
+      <%= recaptcha_tags %>
       <%= f.submit "Submit", id: "submit-button" %>
     </div>
   <% end %>
