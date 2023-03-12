@@ -31,7 +31,6 @@ function closeMenuOnBodyClick(event) {
  const navResponsive = () => {
    document.querySelector(".dropbtn").addEventListener("click", (e) => {
      const menu = document.querySelector(".dropdown-content")
-     console.log("hey")
      if (menu.style.display == "block") {
        closeMenu();
      } else if (menu.style.display == "" || menu.style.display == "none") {

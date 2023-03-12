@@ -4,6 +4,8 @@ export default class extends Controller {
   static targets = ["window", "button", "buttonClose", "submit"]
 
   toggleModal(event) {
+
+
     if (document.querySelector(".active") && document.querySelector(".active") != this.windowTarget) {
       const activeWindow = document.querySelector(".active")
       activeWindow.classList.add("d-none")
@@ -26,6 +28,12 @@ export default class extends Controller {
        this.buttonTarget.innerText = "Close"
      } else {
       this.buttonTarget.innerText = "Request Documentation"
+     }
+
+    if (!this.windowTarget.classList.contains("d-none")) {
+      document.body.style.overflowY = "hidden"
+     } else {
+      document.body.style.overflowY = "visible"
      }
   }
 }

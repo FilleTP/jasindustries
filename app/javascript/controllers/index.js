@@ -21,3 +21,6 @@ application.register("media_sidebar", MediaSidebarController)
 
 import MapController from "./map_controller"
 application.register("map", MapController)
+
+import TopController from "./top_controller"
+application.register("top", TopController)

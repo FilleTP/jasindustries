@@ -8,7 +8,6 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("HELLO sidebar")
     const sidebar = document.querySelector(".product-sidebar-container")
     sidebar.style.position = "fixed"
   }
@@ -49,8 +48,5 @@ export default class extends Controller {
       }
   }
 
-  scroll(event) {
-    console.log("scrolling");
-  }
 
 }
