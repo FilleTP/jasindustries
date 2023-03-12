@@ -11,7 +11,7 @@
   <% end %>
   <div class="close-button-div">
     <h3 class="form-header">Request Documentation</h3>
-    <button class="close-form-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Close</button>
+    <button type="button" class="close-form-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Close</button>
   </div>
   <div>
     <%=  f.association :product, collection: @products, required: true, label: false, selected: product.id %>

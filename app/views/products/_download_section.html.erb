@@ -8,7 +8,7 @@
           <p><strong>Category:</strong> <%=  product.category.name%></p>
           <p><strong>Market:</strong> <%=  product.market.name%></p>
         </div>
-        <button class="download-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Request Documentation</button>
+        <button type="button" class="download-button" data-modal_reveal-target="button" data-action="click->modal_reveal#toggleModal">Request Documentation</button>
       </div>
       <div data-modal_reveal-target="window" class="d-none product-lead-form-div">
         <%= render partial: 'modal', locals: { product: product } %>

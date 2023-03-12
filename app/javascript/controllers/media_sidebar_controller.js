@@ -6,9 +6,7 @@ export default class extends Controller {
   initialize() {
     document.querySelector(".media-sidebar-mobile").style.display = "none"
   }
-  connect() {
-    console.log("HELLO media sidebar")
-  }
+
   mobileToggle(event) {
 
     const display = document.querySelector(".media-sidebar-mobile").style.display === "none"
