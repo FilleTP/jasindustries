@@ -1,6 +1,6 @@
 <div class="media-sidebar-container" data-controller="media_sidebar" style="width:200px;">
   <% unless params[:action] == "index" %>
-    <%= link_to "Back to All Posts", media_centers_path, class: "media-sidebar-header-button" %>
+    <%= link_to "All Posts", media_centers_path, class: "media-sidebar-header-button" %>
   <% end %>
   <p class="media-solutions-by-market-desktop"><strong>Posts</strong></p>
   <p class="media-solutions-by-market-mobile" data-action="click->media_sidebar#mobileToggle"><strong>Posts</strong> <i class="fas fa-search"></i></p>

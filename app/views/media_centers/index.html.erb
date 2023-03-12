@@ -10,6 +10,7 @@
       <div class="cards-div-media">
         <% @media_centers.each do |media_center| %>
           <div class="card-media">
+            <%= link_to "", media_center_path(media_center), class: "card-link" %>
             <div class="card-image" style="background-image: url('<%= cl_image_path(media_center.photos.first.key, crop: :fill)%>');">
             </div>
             <div class="card-bottom-media">
